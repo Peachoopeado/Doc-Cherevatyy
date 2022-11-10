@@ -1,0 +1,1093 @@
+@font-face{
+    font-family:'MontserratSemiBold';
+    src: url('..fonts/MontserratSemiBold.woff') format ('woff'), url ('..fonts/MontserratSemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    background: #DDDDDD;
+}
+main {
+    font-family: 'Montserrat', sans-serif;
+/*##########################################################ШАПКА##########################################################    */
+}
+header {
+    position:fixed;
+    width: 1178px;
+    height: 81px;
+    left: 129px;
+    top:36px;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 20px;
+    z-index: 1;
+    
+}
+.logo{
+    float: left;
+    margin: 25px 25px 15px 115px;
+    font-weight:bold;
+    width: 35px;
+    height: 35px;
+    background: #6FA9BB;
+    border-radius: 7px;
+
+}
+.logo h1{
+    padding: 10px 6.6px;
+    font-weight: 1000;
+    color: white;
+}
+.title_container{
+    float: left;
+    margin: 30px 17px 30px 2px;
+    font-size: 25px;
+}
+.menu1{
+    float:left;
+    margin: 30px 17px 30px 5px;
+    font-size: 25px;
+    
+}
+
+.menu1 li{
+    float: left;
+    margin-right: 15px
+       
+}
+/*##########################################################КОНЕЦ ШАПКИ##########################################################    */
+/*##########################################################ЛИД##########################################################    */
+.leadframe{
+    position: absolute;
+    width: 1368px;
+    height: 552px;
+    left: 36px;
+    top: 150px;
+    background: #EDEDED;
+    border-radius: 20px;
+}
+.lead{
+    position: absolute;
+    width: 740px;
+    height: 302px;
+    left: 46px;
+    top: 157px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    align-items: center;
+    text-align: center;
+}
+.leadframe img{
+    padding-left: 835px;
+}
+.lead h1{
+    margin-bottom: 20px;
+}
+.lead h2{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.lead a{
+    background: #6FA9BB;
+    padding: 15px 15px 15px 15px;
+    
+    font-size: 22px;
+    border-radius: 20px;
+}
+/*##########################################################КОНЕЦ ЛИДА##########################################################    */
+
+/*##########################################################УСЛУГИ##########################################################    */
+.services{
+    position: absolute;
+    width: 985px;
+    height: 244px;
+    left: 220px;
+    top: 985px;
+}
+.services h1{
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    text-align: center;
+    align-items: center;
+}
+.bodyframe{
+    position: absolute;
+    float: left;
+    width: 199px;
+    height: 244px;
+    left: 41px;
+    top: 85px;
+    background: #EDEDED;
+    border-radius: 20px;
+}
+.bodyframe img{
+    padding: 25px 36px 25px;
+}
+.bodyframe p {
+    width: 180px;
+    height: 54px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px 10px 10px 15px;
+    background: #6FA9BB;
+    border-radius: 20px; 
+}
+.bodyframe p a{
+    color: white;
+}
+
+.legframe{
+    position:absolute;
+    float: left;
+    width: 200px;
+    height: 244px;
+    left: 280px;
+    top: 85px;
+    background: #EDEDED;
+    border-radius: 20px;
+    
+}
+.legframe p{
+    width: 180px;
+    height: 54px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 12px 10px 10px 15px;
+    background: #6FA9BB;
+    border-radius: 20px; 
+}
+.legframe p a{
+    color:white;
+}
+.legframe img{
+    padding: 25px 45px 25px;
+}
+.handframe{
+    position: absolute;
+    float: left;
+    width: 200px;
+    height: 244px;
+    left: 519px;
+    top: 85px;
+    background: #EDEDED;
+    border-radius: 20px;
+    
+}
+.handframe p{
+    width: 180px;
+    height: 54px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 12px 10px 10px 15px;
+    background: #6FA9BB;
+    border-radius: 20px; 
+}
+.handframe p a{
+    color: white;
+}
+.handframe img{
+    padding: 25px 44px 25px;
+}
+.shoulderframe{
+    position: absolute;
+    float: left;
+    width: 200px;
+    height: 244px;
+    left: 758px;
+    top: 85px;
+    background: #EDEDED;
+    border-radius: 20px;
+}
+.shoulderframe p{
+    width: 180px;
+    height: 54px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 18px 10px 10px 15px;
+    background: #6FA9BB;
+    border-radius: 20px; 
+}
+.shoulderframe p a{
+    color: white;
+}
+.shoulderframe img{
+    padding: 5px 20px 0px;
+}
+/*##########################################################КОНЕЦ УСЛУГ##########################################################    */
+
+/*##########################################################ЗАПИСЬ НА ПРИЁМ1##########################################################    */
+.appointment_header h1{
+    position: absolute;
+    width: 357px;
+    height: 59px;
+    left: 542px;
+    top: 1482px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+color: #000000;
+}
+.appointment{
+    position: absolute;
+    width: 962px;
+    height: 388px;
+    left: 232px;
+    top: 1574px;
+    background: #EDEDED;
+    border-radius: 20px;
+    
+}
+.appointment input{
+    width: 301px;
+    height: 37px;
+    margin: 30px 90px 30px;
+    display: table;
+    border-radius: 20px;
+    padding-left: 20px; 
+    font-weight: 700;
+    
+}
+.appointment select{
+    position: relative;
+    width: 301px;
+    height: 37px;
+    margin: 30px 90px 30px;
+    display: table;
+    border-radius: 20px;
+    padding-left: 20px; 
+    font-weight: 700;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    
+}
+
+#message{
+    width: 301px;
+    height: 250px;
+    margin: -268px -30px -30px 580px;
+    margin-bottom: 50px;
+    padding: 0px 10px 195px 20px;
+    
+}
+.appointment a{
+    background: #6FA9BB;
+    padding: 15px 15px 15px 15px;
+    margin: 36px 331px 30px;
+    font-size: 22px;
+    border-radius: 20px;
+}
+/*##########################################################КОНЕЦ ЗАПИСИ НА ПРИЁМ1##########################################################    */
+
+/*##########################################################АРТОСКОПИЯ##########################################################    */
+.arthroscopy_frame{
+    position: absolute;
+    width: 1049px;
+    height: 596.04px;
+    left: 186px;
+    top: 2190px;
+
+background: #EDEDED;
+border-radius: 25px;
+}
+.arthroscopy{
+    position: absolute;
+    width: 740px;
+    height: 302px;
+    left: 46px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+.arthroscopy h1{
+    position: absolute;
+    width: 336.12px;
+    height: 138px;
+    background: #6FA9BB;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.arthroscopy p{
+    position: absolute;
+    width: 540.74px;
+    height: 245.53px;
+    top: 210.12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.imgcont1{
+    position: absolute;
+width: 458.04px;
+height: 359.83px;
+left: 536.32px;
+top: 43.34px;
+
+background: #D9D9D9;
+}
+.arthroscopy a{
+    position: absolute;
+    width: 285.62px;
+    height: 68.1px;
+    left: 332.47px;
+    top: 456.94px;
+    background: #6FA9BB;
+    padding: 15px 15px 10px 21px;
+    font-size: 22px;
+    border-radius: 20px;
+    
+
+}
+/*##########################################################КОНЕЦ АРТОСКОПИИ##########################################################    */
+
+/*##########################################################ХТС##########################################################    */
+.legsurg_frame{
+    position: absolute;
+    width: 1049px;
+    height: 596.04px;
+    left: 186px;
+    top: 2920px;
+
+background: #EDEDED;
+border-radius: 25px;
+}
+.legsurg{
+    position: absolute;
+    width: 740px;
+    height: 302px;
+    left: 46px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+.legsurg h1{
+    position: absolute;
+    width: 336.12px;
+    height: 138px;
+    background: #6FA9BB;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.legsurg p{
+    position: absolute;
+    width: 540.74px;
+    height: 245.53px;
+    top: 210.12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.imgcont2{
+    position: absolute;
+width: 458.04px;
+height: 359.83px;
+left: 536.32px;
+top: 43.34px;
+
+background: #D9D9D9;
+}
+.legsurg a{
+    position: absolute;
+    width: 285.62px;
+    height: 68.1px;
+    left: 332.47px;
+    top: 456.94px;
+    background: #6FA9BB;
+    padding: 15px 15px 10px 21px;
+    font-size: 22px;
+    border-radius: 20px;
+    
+
+}
+/*##########################################################КОНЕЦ ХТС##########################################################    */
+/*##########################################################КОЛЕНО##########################################################    */
+
+.kneesurg_frame{
+    position: absolute;
+    width: 1049px;
+    height: 596.04px;
+    left: 186px;
+    top: 3650px;
+
+background: #EDEDED;
+border-radius: 25px;
+}
+.kneesurg{
+    position: absolute;
+    width: 740px;
+    height: 302px;
+    left: 46px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+.kneesurg h1{
+    position: absolute;
+    width: 336.12px;
+    height: 138px;
+    background: #6FA9BB;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.kneesurg p{
+    position: absolute;
+    width: 540.74px;
+    height: 245.53px;
+    top: 210.12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.imgcont3{
+    position: absolute;
+width: 458.04px;
+height: 359.83px;
+left: 536.32px;
+top: 43.34px;
+
+background: #D9D9D9;
+}
+.kneesurg a{
+    position: absolute;
+    width: 285.62px;
+    height: 68.1px;
+    left: 332.47px;
+    top: 456.94px;
+    background: #6FA9BB;
+    padding: 15px 15px 10px 21px;
+    font-size: 22px;
+    border-radius: 20px;
+    
+
+}
+/*##########################################################КОНЕЦ КОЛЕНА##########################################################    */
+/*##########################################################ОСТЕОТОМИЯ##########################################################    */
+
+.osteotomy_frame{
+    position: absolute;
+    width: 1049px;
+    height: 596.04px;
+    left: 186px;
+    top: 4380px;
+
+background: #EDEDED;
+border-radius: 25px;
+}
+.osteotomy{
+    position: absolute;
+    width: 740px;
+    height: 302px;
+    left: 46px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+.osteotomy h1{
+    position: absolute;
+    width: 336.12px;
+    height: 138px;
+    background: #6FA9BB;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.osteotomy p{
+    position: absolute;
+    width: 540.74px;
+    height: 245.53px;
+    top: 210.12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.imgcont4{
+    position: absolute;
+width: 458.04px;
+height: 359.83px;
+left: 536.32px;
+top: 43.34px;
+
+background: #D9D9D9;
+}
+.osteotomy a{
+    position: absolute;
+    width: 285.62px;
+    height: 68.1px;
+    left: 332.47px;
+    top: 456.94px;
+    background: #6FA9BB;
+    padding: 15px 15px 10px 21px;
+    font-size: 22px;
+    border-radius: 20px;
+    
+
+}
+/*##########################################################БЛОГ##########################################################    */
+
+.blog{
+    position: absolute;
+    width: 985px;
+    height: 244px;
+    left: 220px;
+    top: 5300px;
+}
+.blog h1{
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    text-align: center;
+    align-items: center;
+}
+.recframe{
+    position: absolute;
+    float: left;
+    width: 199px;
+    height: 244px;
+    left: 41px;
+    top: 85px;
+    background: #EDEDED;
+    border-radius: 20px;
+}
+.recframe img{
+    padding: 25px 36px 25px;
+}
+.recframe p {
+    width: 180px;
+    height: 54px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px 10px 10px 15px;
+    background: #6FA9BB;
+    border-radius: 20px; 
+}
+.recframe p a{
+    color: white;
+}
+
+.artframe{
+    position:absolute;
+    float: left;
+    width: 200px;
+    height: 244px;
+    left: 280px;
+    top: 85px;
+    background: #EDEDED;
+    border-radius: 20px;
+    
+}
+.artframe p{
+    width: 180px;
+    height: 54px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 12px 10px 10px 15px;
+    background: #6FA9BB;
+    border-radius: 20px; 
+}
+.artframe p a{
+    color:white;
+}
+.artframe img{
+    padding: 25px 45px 25px;
+}
+.qualframe{
+    position: absolute;
+    float: left;
+    width: 200px;
+    height: 244px;
+    left: 519px;
+    top: 85px;
+    background: #EDEDED;
+    border-radius: 20px;
+    
+}
+.qualframe p{
+    width: 180px;
+    height: 54px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 12px 10px 10px 15px;
+    background: #6FA9BB;
+    border-radius: 20px; 
+}
+.qualframe p a{
+    color: white;
+}
+.qualframe img{
+    padding: 25px 44px 25px;
+}
+.patentframe{
+    position: absolute;
+    float: left;
+    width: 200px;
+    height: 244px;
+    left: 758px;
+    top: 85px;
+    background: #EDEDED;
+    border-radius: 20px;
+}
+.patentframe p{
+    width: 180px;
+    height: 54px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 18px 10px 10px 15px;
+    background: #6FA9BB;
+    border-radius: 20px; 
+}
+.patentframe p a{
+    color: white;
+}
+.patentframe img{
+    padding: 5px 20px 0px;
+}
+/*##########################################################КОНЕЦ БЛОГА##########################################################    */
+/*##########################################################РЕКОМЕНДАЦИИ##########################################################    */
+
+.recomend_frame{
+    position: absolute;
+    width: 1049px;
+    height: 596.04px;
+    left: 186px;
+    top: 6030px;
+
+    background: #EDEDED;
+    border-radius: 25px;
+}
+.recomend{
+    position: absolute;
+    width: 740px;
+    height: 302px;
+    left: 46px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+.recomend h1{
+    position: absolute;
+    width: 336.12px;
+    height: 138px;
+    background: #6FA9BB;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.recomend p{
+    position: absolute;
+    width: 540.74px;
+    height: 245.53px;
+    top: 210.12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.recs{
+    position: absolute;
+width: 458.04px;
+height: 359.83px;
+left: 536.32px;
+top: 43.34px;
+
+background: #D9D9D9;
+}
+.recomend a{
+    position: absolute;
+    width: 285.62px;
+    height: 68.1px;
+    left: 332.47px;
+    top: 456.94px;
+    background: #6FA9BB;
+    padding: 15px 15px 10px 21px;
+    font-size: 22px;
+    border-radius: 20px;
+    
+}
+/*##########################################################КОНЕЦ РЕКОМЕНДАЦИЙ##########################################################    */
+
+/*##########################################################СТАТЬИ##########################################################    */
+
+
+
+.articles_frame{
+    position: absolute;
+    width: 1049px;
+    height: 596.04px;
+    left: 186px;
+    top: 6760px;
+
+    background: #EDEDED;
+    border-radius: 25px;
+}
+.articles{
+    position: absolute;
+    width: 740px;
+    height: 302px;
+    left: 46px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+.articles h1{
+    position: absolute;
+    width: 336.12px;
+    height: 138px;
+    background: #6FA9BB;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.articles p{
+    position: absolute;
+    width: 540.74px;
+    height: 245.53px;
+    top: 210.12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.arts{
+    position: absolute;
+width: 458.04px;
+height: 359.83px;
+left: 536.32px;
+top: 43.34px;
+
+background: #D9D9D9;
+}
+.articles a{
+    position: absolute;
+    width: 285.62px;
+    height: 68.1px;
+    left: 332.47px;
+    top: 456.94px;
+    background: #6FA9BB;
+    padding: 15px 15px 10px 21px;
+    font-size: 22px;
+    border-radius: 20px;
+}
+/*##########################################################КОНЕЦ СТАТЕЙ##########################################################    */
+
+/*##########################################################КВАЛИФИКАЦИИ##########################################################    */
+
+.qualifications_frame{
+    position: absolute;
+    width: 1049px;
+    height: 596.04px;
+    left: 186px;
+    top: 7490px;
+
+    background: #EDEDED;
+    border-radius: 25px;
+}
+.qualifications{
+    position: absolute;
+    width: 740px;
+    height: 302px;
+    left: 46px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+.qualifications h1{
+    position: absolute;
+    width: 336.12px;
+    height: 138px;
+    background: #6FA9BB;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.qualifications p{
+    position: absolute;
+    width: 540.74px;
+    height: 245.53px;
+    top: 210.12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.qual{
+    position: absolute;
+width: 458.04px;
+height: 359.83px;
+left: 536.32px;
+top: 43.34px;
+
+background: #D9D9D9;
+}
+.qualifications a{
+    position: absolute;
+    width: 285.62px;
+    height: 68.1px;
+    left: 332.47px;
+    top: 456.94px;
+    background: #6FA9BB;
+    padding: 15px 15px 10px 21px;
+    font-size: 22px;
+    border-radius: 20px;
+}
+/*##########################################################КОНЕЦ КВАЛИФИКАЦИИ##########################################################    */
+
+/*##########################################################ПАТЕНТЫ##########################################################    */
+
+
+.patents_frame{
+    position: absolute;
+    width: 1049px;
+    height: 596.04px;
+    left: 186px;
+    top: 8220px;
+
+    background: #EDEDED;
+    border-radius: 25px;
+}
+.patents{
+    position: absolute;
+    width: 740px;
+    height: 302px;
+    left: 46px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+.patents h1{
+    position: absolute;
+    width: 336.12px;
+    height: 138px;
+    background: #6FA9BB;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.patents p{
+    position: absolute;
+    width: 540.74px;
+    height: 245.53px;
+    top: 210.12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.pat{
+    position: absolute;
+width: 458.04px;
+height: 359.83px;
+left: 536.32px;
+top: 43.34px;
+
+background: #D9D9D9;
+}
+.patents a{
+    position: absolute;
+    width: 285.62px;
+    height: 68.1px;
+    left: 332.47px;
+    top: 456.94px;
+    background: #6FA9BB;
+    padding: 15px 15px 10px 21px;
+    font-size: 22px;
+    border-radius: 20px;
+}
+/*##########################################################КОНЕЦ ПАТЕНТОВ##########################################################    */
+
+/*##########################################################ОСТАВЬТЕ ЗАЯВКУ##########################################################    */
+
+.appointment2_header h1{
+    position: absolute;
+    width: 357px;
+    height: 59px;
+    left: 542px;
+    top: 8950px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+color: #000000;
+}
+.appointment2{
+    position: absolute;
+    width: 962px;
+    height: 388px;
+    left: 232px;
+    top: 9050px;
+    background: #EDEDED;
+    border-radius: 20px;
+    
+}
+.appointment2 input{
+    width: 301px;
+    height: 37px;
+    margin: 30px 90px 30px;
+    display: table;
+    border-radius: 20px;
+    padding-left: 20px; 
+    font-weight: 700;
+    
+}
+.appointment2 select{
+    width: 301px;
+    height: 37px;
+    margin: 30px 90px 30px;
+    display: table;
+    border-radius: 20px;
+    padding-left: 20px; 
+    font-weight: 700;
+}
+#message{
+    width: 301px;
+    height: 250px;
+    margin: -268px -30px -30px 580px;
+    margin-bottom: 50px;
+    padding: 0px 10px 195px 20px;
+    
+}
+.appointment2 a{
+    background: #6FA9BB;
+    padding: 15px 15px 15px 15px;
+    margin: 36px 331px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+footer{
+    position: absolute;
+    width: 538px;
+    height: 26px;
+    left: 461px;
+    top: 9580px;
+}
+.footmenu{
+    float: left;
+    display: inline-block;
+}
+.footmenu li{
+    margin: 15px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 124.5%;
+}
