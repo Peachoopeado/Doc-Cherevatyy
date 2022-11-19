@@ -15,7 +15,7 @@ header {
     position:fixed;
     width: 1178px;
     height: 81px;
-    left: 129px;
+    left: 165px;
     top:36px;
     background: rgba(217, 217, 217, 0.4);
     border-radius: 20px;
@@ -24,7 +24,7 @@ header {
 }
 .logo{
     float: left;
-    margin: 25px 25px 15px 115px;
+    margin: 25px 15px 15px 90px;
     font-weight:bold;
     width: 35px;
     height: 35px;
@@ -39,13 +39,13 @@ header {
 }
 .title_container{
     float: left;
-    margin: 30px 17px 30px 2px;
+    margin: 30px 60px 30px 2px;
     font-size: 25px;
 }
 .menu1{
     float:left;
-    margin: 30px 17px 30px 5px;
-    font-size: 25px;
+    margin: 30px 17px 30px 85px;
+    font-size: 20px;
     
 }
 
@@ -60,7 +60,7 @@ header {
     position: absolute;
     width: 1368px;
     height: 552px;
-    left: 36px;
+    left: 76px;
     top: 150px;
     background: #EDEDED;
     border-radius: 20px;
@@ -102,7 +102,7 @@ header {
     position: absolute;
     width: 985px;
     height: 244px;
-    left: 220px;
+    left: 275px;
     top: 985px;
 }
 .services h1{
@@ -111,14 +111,13 @@ header {
     font-weight: 700;
     line-height: 37px;
     text-align: center;
-    align-items: center;
 }
 .bodyframe{
     position: absolute;
     float: left;
     width: 199px;
     height: 244px;
-    left: 41px;
+    left: 46px;
     top: 85px;
     background: #EDEDED;
     border-radius: 20px;
@@ -145,7 +144,7 @@ header {
     float: left;
     width: 200px;
     height: 244px;
-    left: 280px;
+    left: 275px;
     top: 85px;
     background: #EDEDED;
     border-radius: 20px;
@@ -173,7 +172,7 @@ header {
     float: left;
     width: 200px;
     height: 244px;
-    left: 519px;
+    left: 504px;
     top: 85px;
     background: #EDEDED;
     border-radius: 20px;
@@ -201,7 +200,7 @@ header {
     float: left;
     width: 200px;
     height: 244px;
-    left: 758px;
+    left: 733px;
     top: 85px;
     background: #EDEDED;
     border-radius: 20px;
@@ -230,7 +229,7 @@ header {
     position: absolute;
     width: 357px;
     height: 59px;
-    left: 542px;
+    left: 615px;
     top: 1482px;
 
     font-family: 'Montserrat';
@@ -248,7 +247,7 @@ color: #000000;
     position: absolute;
     width: 962px;
     height: 388px;
-    left: 232px;
+    left: 282px;
     top: 1574px;
     background: #EDEDED;
     border-radius: 20px;
@@ -290,7 +289,7 @@ color: #000000;
 .appointment a{
     background: #6FA9BB;
     padding: 15px 15px 15px 15px;
-    margin: 36px 331px 30px;
+    margin: 36px 344px 30px;
     font-size: 22px;
     border-radius: 20px;
 }
@@ -301,7 +300,7 @@ color: #000000;
     position: absolute;
     width: 1049px;
     height: 596.04px;
-    left: 186px;
+    left: 238px;
     top: 2190px;
 
 background: #EDEDED;
@@ -374,7 +373,7 @@ background: #D9D9D9;
     position: absolute;
     width: 1049px;
     height: 596.04px;
-    left: 186px;
+    left: 238px;
     top: 2920px;
 
 background: #EDEDED;
@@ -447,7 +446,7 @@ background: #D9D9D9;
     position: absolute;
     width: 1049px;
     height: 596.04px;
-    left: 186px;
+    left: 238px;
     top: 3650px;
 
 background: #EDEDED;
@@ -520,7 +519,7 @@ background: #D9D9D9;
     position: absolute;
     width: 1049px;
     height: 596.04px;
-    left: 186px;
+    left: 238px;
     top: 4380px;
 
 background: #EDEDED;
@@ -592,7 +591,7 @@ background: #D9D9D9;
     position: absolute;
     width: 985px;
     height: 244px;
-    left: 220px;
+    left: 265px;
     top: 5300px;
 }
 .blog h1{
@@ -608,7 +607,7 @@ background: #D9D9D9;
     float: left;
     width: 199px;
     height: 244px;
-    left: 41px;
+    left: 36px;
     top: 85px;
     background: #EDEDED;
     border-radius: 20px;
@@ -635,7 +634,7 @@ background: #D9D9D9;
     float: left;
     width: 200px;
     height: 244px;
-    left: 280px;
+    left: 275px;
     top: 85px;
     background: #EDEDED;
     border-radius: 20px;
@@ -663,7 +662,7 @@ background: #D9D9D9;
     float: left;
     width: 200px;
     height: 244px;
-    left: 519px;
+    left: 514px;
     top: 85px;
     background: #EDEDED;
     border-radius: 20px;
@@ -691,7 +690,7 @@ background: #D9D9D9;
     float: left;
     width: 200px;
     height: 244px;
-    left: 758px;
+    left: 753px;
     top: 85px;
     background: #EDEDED;
     border-radius: 20px;
@@ -720,7 +719,7 @@ background: #D9D9D9;
     position: absolute;
     width: 1049px;
     height: 596.04px;
-    left: 186px;
+    left: 238px;
     top: 6030px;
 
     background: #EDEDED;
@@ -795,7 +794,7 @@ background: #D9D9D9;
     position: absolute;
     width: 1049px;
     height: 596.04px;
-    left: 186px;
+    left: 238px;
     top: 6760px;
 
     background: #EDEDED;
@@ -867,7 +866,7 @@ background: #D9D9D9;
     position: absolute;
     width: 1049px;
     height: 596.04px;
-    left: 186px;
+    left: 238px;
     top: 7490px;
 
     background: #EDEDED;
@@ -940,7 +939,7 @@ background: #D9D9D9;
     position: absolute;
     width: 1049px;
     height: 596.04px;
-    left: 186px;
+    left: 238px;
     top: 8220px;
 
     background: #EDEDED;
@@ -1012,7 +1011,7 @@ background: #D9D9D9;
     position: absolute;
     width: 357px;
     height: 59px;
-    left: 542px;
+    left: 615px;
     top: 8950px;
 
     font-family: 'Montserrat';
@@ -1030,7 +1029,7 @@ color: #000000;
     position: absolute;
     width: 962px;
     height: 388px;
-    left: 232px;
+    left: 282px;
     top: 9050px;
     background: #EDEDED;
     border-radius: 20px;
@@ -1066,7 +1065,7 @@ color: #000000;
 .appointment2 a{
     background: #6FA9BB;
     padding: 15px 15px 15px 15px;
-    margin: 36px 331px 30px;
+    margin: 36px 344px 30px;
     font-size: 22px;
     font-weight: 700;
     border-radius: 20px;
@@ -1076,15 +1075,18 @@ footer{
     position: absolute;
     width: 538px;
     height: 26px;
-    left: 461px;
-    top: 9580px;
+    left: 541px;
+    top: 9540px;
 }
 .footmenu{
+    
+    
     float: left;
     display: inline-block;
 }
 .footmenu li{
     margin: 15px;
+    
     display: inline-block;
     font-style: normal;
     font-weight: 700;
