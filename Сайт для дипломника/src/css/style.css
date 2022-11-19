@@ -6,19 +6,23 @@
 }
 body{
     background: #DDDDDD;
+    
+    
 }
+
 main {
     font-family: 'Montserrat', sans-serif;
 /*##########################################################ШАПКА##########################################################    */
 }
 header {
     position:fixed;
-    width: 1178px;
+    
     height: 81px;
     left: 165px;
     top:36px;
     background: rgba(217, 217, 217, 0.4);
     border-radius: 20px;
+    display: inline-flex;
     z-index: 1;
     
 }
@@ -26,7 +30,7 @@ header {
     float: left;
     margin: 25px 15px 15px 90px;
     font-weight:bold;
-    width: 35px;
+    
     height: 35px;
     background: #6FA9BB;
     border-radius: 7px;
@@ -58,9 +62,9 @@ header {
 /*##########################################################ЛИД##########################################################    */
 .leadframe{
     position: absolute;
-    width: 1368px;
+    
     height: 552px;
-    left: 76px;
+    left: 71px;
     top: 150px;
     background: #EDEDED;
     border-radius: 20px;
@@ -89,8 +93,14 @@ header {
     margin-bottom: 25px;
 }
 .lead a{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 293px;
     background: #6FA9BB;
-    padding: 15px 15px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     font-size: 22px;
     border-radius: 20px;
@@ -104,6 +114,7 @@ header {
     height: 244px;
     left: 275px;
     top: 985px;
+    
 }
 .services h1{
     font-style: normal;
@@ -121,6 +132,7 @@ header {
     top: 85px;
     background: #EDEDED;
     border-radius: 20px;
+    
 }
 .bodyframe img{
     padding: 25px 36px 25px;
@@ -131,7 +143,9 @@ header {
     text-align: center;
     font-weight: bold;
     margin-left: 10px;
-    padding: 5px 10px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #6FA9BB;
     border-radius: 20px; 
 }
@@ -157,7 +171,9 @@ header {
     font-weight: bold;
     margin-left: 10px;
     margin-top: 10px;
-    padding: 12px 10px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #6FA9BB;
     border-radius: 20px; 
 }
@@ -185,7 +201,9 @@ header {
     font-weight: bold;
     margin-top: 10px;
     margin-left: 10px;
-    padding: 12px 10px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #6FA9BB;
     border-radius: 20px; 
 }
@@ -212,7 +230,9 @@ header {
     font-weight: bold;
     margin-top: 5px;
     margin-left: 10px;
-    padding: 18px 10px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #6FA9BB;
     border-radius: 20px; 
 }
@@ -281,17 +301,23 @@ color: #000000;
 #message{
     width: 301px;
     height: 250px;
-    margin: -268px -30px -30px 580px;
+    margin: -268px -30px 30px 580px;
     margin-bottom: 50px;
     padding: 0px 10px 195px 20px;
     
 }
 .appointment a{
     background: #6FA9BB;
-    padding: 15px 15px 15px 15px;
-    margin: 36px 344px 30px;
+    position: absolute;
+    width: 285.62px;
+    height: 68.1px;
+    left: 332.47px;
+    top: 306px;
     font-size: 22px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*##########################################################КОНЕЦ ЗАПИСИ НА ПРИЁМ1##########################################################    */
 
@@ -355,12 +381,15 @@ background: #D9D9D9;
 }
 .arthroscopy a{
     position: absolute;
-    width: 285.62px;
+    display: flex;
+    width: 300px;
     height: 68.1px;
     left: 332.47px;
     top: 456.94px;
     background: #6FA9BB;
-    padding: 15px 15px 10px 21px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     font-size: 22px;
     border-radius: 20px;
     
@@ -433,7 +462,9 @@ background: #D9D9D9;
     left: 332.47px;
     top: 456.94px;
     background: #6FA9BB;
-    padding: 15px 15px 10px 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 22px;
     border-radius: 20px;
     
@@ -506,7 +537,9 @@ background: #D9D9D9;
     left: 332.47px;
     top: 456.94px;
     background: #6FA9BB;
-    padding: 15px 15px 10px 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 22px;
     border-radius: 20px;
     
@@ -579,7 +612,9 @@ background: #D9D9D9;
     left: 332.47px;
     top: 456.94px;
     background: #6FA9BB;
-    padding: 15px 15px 10px 21px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     font-size: 22px;
     border-radius: 20px;
     
@@ -593,14 +628,16 @@ background: #D9D9D9;
     height: 244px;
     left: 265px;
     top: 5300px;
+    justify-content: space-around;
 }
 .blog h1{
     font-style: normal;
     font-size: 30px;
     font-weight: 700;
     line-height: 37px;
-    text-align: center;
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .recframe{
     position: absolute;
@@ -621,7 +658,9 @@ background: #D9D9D9;
     text-align: center;
     font-weight: bold;
     margin-left: 10px;
-    padding: 5px 10px 10px 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     background: #6FA9BB;
     border-radius: 20px; 
 }
@@ -647,7 +686,9 @@ background: #D9D9D9;
     font-weight: bold;
     margin-left: 10px;
     margin-top: 10px;
-    padding: 12px 10px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #6FA9BB;
     border-radius: 20px; 
 }
@@ -675,7 +716,9 @@ background: #D9D9D9;
     font-weight: bold;
     margin-top: 10px;
     margin-left: 10px;
-    padding: 12px 10px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #6FA9BB;
     border-radius: 20px; 
 }
@@ -702,7 +745,9 @@ background: #D9D9D9;
     font-weight: bold;
     margin-top: 5px;
     margin-left: 10px;
-    padding: 18px 10px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #6FA9BB;
     border-radius: 20px; 
 }
@@ -779,7 +824,9 @@ background: #D9D9D9;
     left: 332.47px;
     top: 456.94px;
     background: #6FA9BB;
-    padding: 15px 15px 10px 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 22px;
     border-radius: 20px;
     
@@ -854,7 +901,9 @@ background: #D9D9D9;
     left: 332.47px;
     top: 456.94px;
     background: #6FA9BB;
-    padding: 15px 15px 10px 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 22px;
     border-radius: 20px;
 }
@@ -926,7 +975,9 @@ background: #D9D9D9;
     left: 332.47px;
     top: 456.94px;
     background: #6FA9BB;
-    padding: 15px 15px 10px 21px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
     font-size: 22px;
     border-radius: 20px;
 }
@@ -999,7 +1050,9 @@ background: #D9D9D9;
     left: 332.47px;
     top: 456.94px;
     background: #6FA9BB;
-    padding: 15px 15px 10px 21px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
     font-size: 22px;
     border-radius: 20px;
 }
@@ -1057,18 +1110,23 @@ color: #000000;
 #message{
     width: 301px;
     height: 250px;
-    margin: -268px -30px -30px 580px;
-    margin-bottom: 50px;
-    padding: 0px 10px 195px 20px;
+    margin: -268px -30px 30px 580px;
+    padding: 0px 10px 165px 20px;
     
 }
 .appointment2 a{
     background: #6FA9BB;
-    padding: 15px 15px 15px 15px;
-    margin: 36px 344px 30px;
+    position:absolute;
+    width: 285.62px;
+    height: 68.1px;
+    left: 332.47px;
+    top: 306px;
     font-size: 22px;
     font-weight: 700;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 footer{
