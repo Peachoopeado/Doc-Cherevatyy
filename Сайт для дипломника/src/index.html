@@ -20,12 +20,12 @@
           <div class="title_container">
               <h1>doc. Cherevatyy</h1>
           </div>
-          <div class="menu1">
+          <div class="menu1" id=menu_1>
               <ul>
-                  <li><a href="#">услуги</a></li>
-                  <li><a href="#">блог</a></li>
-                  <li><a href="#">помощь</a></li>
-                  <li><a href="#">запись на приём</a></li>
+                  <li><a href="#ser">услуги</a></li>
+                  <li><a href="#blo">блог</a></li>
+                  <li><a href="#hel">помощь</a></li>
+                  <li><a href="#app">запись на приём</a></li>
                   <li><a href="#">+7 934 343 34 45</a></li>
               </ul>
           </div>
@@ -34,29 +34,29 @@
        
        <div class="leadframe">
           <img src="../src/img/lead_img.png" alt="">
-           <div class="lead">
+           <div class="lead" id=leadb>
                <h1>врачебная врачебность подколенного подбородка и проведение операций по сохранению суставности сустава</h1>
                <h2>доктор суставно-константивных наук, врач травматолог Lorem ipsum dolor sit amet.</h2>
-               <a href="#">подробнее</a>
+               <a href="#ser">подробнее</a>
            </div>
        </div>
-       <div class="services">
+       <div class="services" id=ser>
            <h1>услуги</h1>
            <div class="bodyframe">
                <img src="../src/img/ser_body.png" alt="" class="body">
-               <a href="#">хирургия тазобедренного сустава</a>
+               <a href="#leg_fr">хирургия тазобедренного сустава</a>
            </div>
            <div class="legframe">
                <img src="../src/img/ser_leg.png" alt="" class="leg">
-               <a href="#">корригирубщая остеотомия</a>
+               <a href="#ost_fr">корригирубщая остеотомия</a>
            </div>
            <div class="handframe">
                <img src="../src/img/ser_hand.png" alt="" class="hand">
-               <a href="#">хирургия коленного сустава</a>
+               <a href="#kn_fr">хирургия коленного сустава</a>
            </div>
            <div class="shoulderframe">
                <img src="../src/img/ser_shoulder.png" alt="" class="shoulder">
-               <a href="#">артроскопия</a>
+               <a href="#art_fr">артроскопия</a>
            </div>
            
 
@@ -64,7 +64,7 @@
        <div class="appointment_header">
                <h1>запись на приём</h1>
            </div>
-       <div class="appointment">
+       <div class="appointment" id=app>
             <input type="text" placeholder="имя">
             <input type="text" placeholder="почта">
             <input type="text" placeholder="телефон">
@@ -78,7 +78,7 @@
             <input type="text" placeholder="сообщение" id="message">
             <a href="#">записаться на приём</a>
        </div>
-       <div class="arthroscopy_frame">
+       <div class="arthroscopy_frame" id=art_fr>
            <div class="arthroscopy">
           <h1>артоскопия</h1>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
@@ -90,7 +90,7 @@
        </div>
        
        </div>
-       <div class="legsurg_frame">
+       <div class="legsurg_frame" id=leg_fr>
             <div class="legsurg">
            <h1>хирургия тазобедренного сустава</h1>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
@@ -102,7 +102,7 @@
            </div>
        </div>
       
-      <div class="kneesurg_frame">
+      <div class="kneesurg_frame" id=kn_fr>
           <div class="kneesurg">
            <h1>хирургия коленного сустава</h1>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
@@ -113,7 +113,7 @@
            <a href="#">записаться на приём</a>
        </div>
       </div>
-       <div class="osteotomy_frame">
+       <div class="osteotomy_frame" id=ost_fr>
            <div class="osteotomy">
            <h1>остеотомия</h1>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
@@ -126,7 +126,7 @@
        </div>
        
        
-       <div class="blog">
+       <div class="blog" id=blo>
           <h1>блог</h1>
           <div class="recframe">
               <img src="" alt="">
@@ -209,6 +209,7 @@
        </footer>
        
    </main>
-    
+    <script src="../src/js/jquery-3.6.1.min.js"></script>
+    <script src="../src/js/myScript.js"></script>
 </body>
 </html>
