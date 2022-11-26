@@ -33,7 +33,7 @@
        </header>
        
        <div class="leadframe">
-          <img src="../src/img/lead_img.png" alt="">
+          
            <div class="lead" id=leadb>
                <h1>врачебная врачебность подколенного подбородка и проведение операций по сохранению суставности сустава</h1>
                <h2>доктор суставно-константивных наук, врач травматолог Lorem ipsum dolor sit amet.</h2>
@@ -42,93 +42,90 @@
        </div>
        <div class="services" id=ser>
            <h1>услуги</h1>
-           <div class="bodyframe">
-               <img src="../src/img/ser_body.png" alt="" class="body">
-               <a href="#leg_fr">хирургия тазобедренного сустава</a>
-           </div>
-           <div class="legframe">
-               <img src="../src/img/ser_leg.png" alt="" class="leg">
-               <a href="#ost_fr">корригирубщая остеотомия</a>
-           </div>
-           <div class="handframe">
-               <img src="../src/img/ser_hand.png" alt="" class="hand">
-               <a href="#kn_fr">хирургия коленного сустава</a>
-           </div>
-           <div class="shoulderframe">
-               <img src="../src/img/ser_shoulder.png" alt="" class="shoulder">
-               <a href="#art_fr">артроскопия</a>
-           </div>
+           <div class="services_container">
+               <div class="bodyframe">
+                   <img src="../src/img/bd.png" alt="">
+                   <a href="#leg_fr">хирургия тазобедренного сустава</a>
+               </div>
+               <div class="legframe">
+                   <img src="/src/img/knsrg.png" alt="">
+                   <a href="#ost_fr">корригирубщая остеотомия</a>
+               </div>
+               <div class="handframe">
+                   <img src="/src/img/ost.png" alt="">
+                   <a href="#kn_fr">хирургия коленного сустава</a>
+               </div>
+               <div class="shoulderframe">
+                   <img src="/src/img/arth.png" alt="">
+                   <a href="#art_fr">артроскопия</a>
+               </div>
+            </div>
            
-
-       </div>
-       <div class="appointment_header">
-               <h1>запись на приём</h1>
-           </div>
-       <div class="appointment" id=app>
-            <input type="text" placeholder="имя">
-            <input type="text" placeholder="почта">
-            <input type="text" placeholder="телефон">
-            <select name="услуга" id="selser">
-                <option value="" disabled selected>услуга</option>
-                <option value="legsurg">хирургия тазобедренного сустава</option>
-                <option value="kneesurg">хирургия коленного сустава</option>
-                <option value="osteotomy">корригирующая остеотомия</option>
-                <option value="arthroscopy">артроскопия</option>
-            </select>
-            <input type="text" placeholder="сообщение" id="message">
-            <a href="#">записаться на приём</a>
-       </div>
-       <div class="arthroscopy_frame" id=art_fr>
-           <div class="arthroscopy">
-          <h1>артоскопия</h1>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
-           <div class="imgcont1">
-               
-           </div>
-           <img src="" alt="" class="arthosc">
-           <a href="#app">записаться на приём</a>
        </div>
        
+       <div class="appointment_frame">
+               <h1>запись на приём</h1>
+           <div class="appointment" id=app>
+              <form action="">
+                   <input type="text" placeholder="имя">
+                    <input type="text" placeholder="почта">
+                    <input type="text" placeholder="телефон">
+                    <select name="услуга" id="selser">
+                    <option value="" disabled selected>услуга</option>
+                    <option value="legsurg">хирургия тазобедренного сустава</option>
+                    <option value="kneesurg">хирургия коленного сустава</option>
+                    <option value="osteotomy">корригирующая остеотомия</option>
+                    <option value="arthroscopy">артроскопия</option>
+                </select>
+                <textarea name="formtext" id="" cols="30" rows="10" placeholder="сообщение"></textarea>
+               </form>
+            
+            <a href="#">записаться на приём</a>
+              
+               
+               
        </div>
+       </div>
+      
+       
        <div class="legsurg_frame" id=leg_fr>
             <div class="legsurg">
-           <h1>хирургия тазобедренного сустава</h1>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
-           <div class="imgcont2">
-               
-           </div>
-           <img src="" alt="" class="leg">
-            <a href="#app">записаться на приём</a>
+               <h1>хирургия тазобедренного сустава</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
+                <a href="#app">записаться на приём</a>
            </div>
        </div>
       
-      <div class="kneesurg_frame" id=kn_fr>
-          <div class="kneesurg">
-           <h1>хирургия коленного сустава</h1>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
-           <div class="imgcont3">
-               
-           </div>
-           <img src="" alt="" class="knee">
-           <a href="#app">записаться на приём</a>
-       </div>
-      </div>
+      
        <div class="osteotomy_frame" id=ost_fr>
            <div class="osteotomy">
-           <h1>остеотомия</h1>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
-           <div class="imgcont4">
-               
-           </div>
-           <img src="" alt="" class="ost">
-           <a href="#app">записаться на приём</a>
+               <h1>остеотомия</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
+               <a href="#app">записаться на приём</a>
            </div>
        </div>
+       <div class="kneesurg_frame" id=kn_fr>
+          <div class="kneesurg">
+               <h1>хирургия коленного сустава</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
+               <a href="#app">записаться на приём</a>
+          </div>
+      </div>
+       <div class="arthroscopy_frame" id=art_fr>
+           <div class="arthroscopy">
+              <h1>артоскопия</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis laudantium rem, dolore voluptatibus, et enim in aliquam velit illum delectus, qui minima unde eum neque nemo, nam magnam labore.</p>
+           
+           
+               <a href="#app">записаться на приём</a>
+           </div>
        
+       </div>
        
        <div class="blog" id=blo>
           <h1>блог</h1>
-          <div class="recframe">
+          <div class="blog_container">
+              <div class="recframe">
               <img src="" alt="">
               <a href="#rec_fr">рекомендации</a>
           </div>
@@ -145,11 +142,12 @@
               <a href="#pat_fr">патенты</a>
           </div>
        </div>
+          </div>
+          
        <div class="recomend_frame" id=rec_fr>
            <div class="recomend">
            <h1>рекомендации</h1>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, nisi.</p>
-           <img src="" alt="" class="recs">
            <a href="#app2">записаться на приём</a>
            </div>
        </div>
@@ -157,7 +155,6 @@
            <div class="articles">
            <h1>статьи</h1>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, nisi.</p>
-           <img src="" alt="" class="arts">
            <a href="#app2">записаться на приём</a>
            </div>
        </div>
@@ -166,7 +163,6 @@
            <div class="qualifications">
            <h1>квалификации</h1>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, nisi.</p>
-           <img src="" alt="" class="qual">
            <a href="#app2">записаться на приём</a>
            </div>
        </div>
@@ -174,15 +170,15 @@
            <div class="patents">
            <h1>патенты</h1>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, nisi.</p>
-           <img src="" alt="" class="pat">
            <a href="#app2">записаться на приём</a>
            </div>
        </div>
        
-      <div class="appointment2_header">
+      <div class="appointment_frame2">
           <h1>запись на приём</h1>
            <div class="appointment2" id=app2>
-               <input type="text" placeholder="имя">
+               <form action="">
+                   <input type="text" placeholder="имя">
                <input type="text" placeholder="почта">
                <input type="text" placeholder="телефон">
                <select name="услуга" id="selser">
@@ -192,10 +188,12 @@
                     <option value="osteotomy">корригирующая остеотомия</option>
                     <option value="arthoscopy">артоскопия</option>
                 </select>
-           
-               <input type="text" placeholder="сообщение" id="message">
                <a href="#">записаться на приём</a>
+               <textarea name="formtext" id="" cols="30" rows="10" placeholder="сообщение"></textarea>
+               </form>
+               
            </div>
+           
       </div>
       
        <footer>

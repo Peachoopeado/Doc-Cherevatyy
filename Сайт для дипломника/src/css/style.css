@@ -12,18 +12,18 @@ body{
 
 main {
     font-family: 'Montserrat', sans-serif;
+    position: relative;
 /*##########################################################ШАПКА##########################################################    */
 }
 header {
-    position:fixed;
-    
+    position: sticky;
+    max-width: 1350px;
     height: 81px;
-    left: 165px;
-    top:36px;
-    background: rgba(217, 217, 217, 0.4);
+    top: 30px;
+    margin: 0 auto;
+    background: rgba(217, 217, 217, 0.4); 
     border-radius: 20px;
-    display: inline-flex;
-    z-index: 1;
+    
     
 }
 .logo{
@@ -59,7 +59,8 @@ header {
 
 .menu1 li{
     float: left;
-    margin-right: 15px
+    margin-right: 15px;
+    display: flex;
        
 }
 
@@ -73,47 +74,44 @@ header {
 /*##########################################################КОНЕЦ ШАПКИ##########################################################    */
 /*##########################################################ЛИД##########################################################    */
 .leadframe{
-    position: absolute;
-    
+    margin:  33px auto 250px ;
+    max-width: 1250px;
     height: 552px;
-    left: 71px;
-    top: 150px;
     background: #EDEDED;
     border-radius: 20px;
+    flex-wrap: wrap;
+    background-image: url(../img/lead_img.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .lead{
-    position: absolute;
-    width: 740px;
+    width: 720px;
     height: 302px;
-    left: 46px;
-    top: 157px;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
-    align-items: center;
     text-align: center;
+    
 }
-.leadframe img{
-    padding-left: 835px;
-}
+
 .lead h1{
-    margin-bottom: 20px;
+    padding: 135px 0 0;
+    margin-bottom: 20px
 }
 .lead h2{
     font-size: 20px;
     margin-bottom: 25px;
 }
 .lead a{
-    position: absolute;
+    
     width: 150px;
     height: 50px;
-    left: 293px;
     background: #6FA9BB;
     display: flex;
-    justify-content: center;
-    align-items: center;
     
+    display: inline-block;
+    padding: 5px;
     font-size: 22px;
     border-radius: 20px;
     
@@ -128,49 +126,50 @@ header {
 
 /*##########################################################УСЛУГИ##########################################################    */
 .services{
-    position: absolute;
-    width: 985px;
-    height: 244px;
-    left: 275px;
-    top: 985px;
-    
+    max-width: 100%;
+    margin-bottom: 130px; 
 }
+
 .services h1{
     font-style: normal;
     font-size: 30px;
     font-weight: 700;
     line-height: 37px;
     text-align: center;
-}
-.bodyframe{
-    position: absolute;
-    float: left;
-    width: 199px;
-    height: 244px;
-    left: 46px;
-    top: 85px;
-    background: #EDEDED;
-    border-radius: 20px;
+    margin-bottom: 29px;
     
 }
-.bodyframe img{
+.services_container{
+    max-width: 1049px;
+    margin: 0 auto 230px;
+}
+.services_container div{
+    display: inline-block;
+    margin: 40px 30px 0px 30px;
+    width: 199px;
+    height: 243px;
+    border-radius: 20px;
+    background: #EDEDED;
+}
+.services_container div img{
     padding: 25px 36px 25px;
 }
-.bodyframe a {
+
+.services_container div a{
     width: 180px;
     height: 54px;
     text-align: center;
     font-weight: bold;
-    margin-left: 10px;
+    margin: 0 auto;
     display: flex;
     color: white;
-    justify-content: center;
-    align-items: center;
+    
     background: #6FA9BB;
     border-radius: 20px;
     
-    transition-duration: 0.3s
+    transition-duration: 0.3s 
 }
+
 
 .bodyframe a:hover{
     background: rgba(0,0,0,0);
@@ -178,162 +177,69 @@ header {
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
 
-.legframe{
-    position:absolute;
-    float: left;
-    width: 200px;
-    height: 244px;
-    left: 275px;
-    top: 85px;
-    background: #EDEDED;
-    border-radius: 20px;
-    
-}
-.legframe a{
-    width: 180px;
-    height: 54px;
-    text-align: center;
-    font-weight: bold;
-    margin-left: 10px;
-    color: white;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #6FA9BB;
-    border-radius: 20px; 
-    
-    transition-duration: 0.3s;
-}
+
+
 
 .legframe a:hover{
     background: rgba(0,0,0,0);
 	color: black;
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
-.legframe img{
-    padding: 25px 45px 25px;
-}
-.handframe{
-    position: absolute;
-    float: left;
-    width: 200px;
-    height: 244px;
-    left: 504px;
-    top: 85px;
-    background: #EDEDED;
-    border-radius: 20px;
-    
-}
-.handframe a{
-    width: 180px;
-    height: 54px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: #6FA9BB;
-    border-radius: 20px;
-    
-    transition-duration: 0.3s;
-}
+
+
 
 .handframe a:hover{
     background: rgba(0,0,0,0);
 	color: black;
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
-.handframe img{
-    padding: 25px 44px 25px;
-}
-.shoulderframe{
-    position: absolute;
-    float: left;
-    width: 200px;
-    height: 244px;
-    left: 733px;
-    top: 85px;
-    background: #EDEDED;
-    border-radius: 20px;
-}
-.shoulderframe a{
-    width: 180px;
-    height: 54px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: #6FA9BB;
-    border-radius: 20px; 
-    
-    transition-duration: 0.3s;
-}
+
+
 .shoulderframe a:hover{
     background: rgba(0,0,0,0);
 	color: black;
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
-.shoulderframe p a{
-    color: white;
-}
-.shoulderframe img{
-    padding: 5px 20px 0px;
-}
+
+
 /*##########################################################КОНЕЦ УСЛУГ##########################################################    */
 
 /*##########################################################ЗАПИСЬ НА ПРИЁМ1##########################################################    */
-.appointment_header h1{
-    position: absolute;
-    width: 357px;
-    height: 59px;
-    left: 615px;
-    top: 1482px;
-
-    font-family: 'Montserrat';
+.appointment_frame{
+    max-width: 1050px;
+    height: auto;
+    margin: 150px auto 150px;
+}
+.appointment_frame h1{
     font-style: normal;
+    font-size: 30px;
     font-weight: 700;
-    font-size: 35px;
-    line-height: 43px;
-    display: flex;
-    align-items: center;
+    line-height: 37px;
     text-align: center;
-
-color: #000000;
+    margin: 0 0 33px;
 }
 .appointment{
-    position: absolute;
-    width: 962px;
-    height: 388px;
-    left: 282px;
-    top: 1574px;
-    background: #EDEDED;
-    border-radius: 20px;
-    
+    border-radius: 30px;
+    background: #eee;
+    padding: 20px;
 }
-.appointment input{
-    width: 301px;
-    height: 37px;
-    margin: 30px 90px 30px;
-    display: table;
+
+
+.appointment  input{ 
+    display: block;
+    width: 360px;
+    height: 50px;
+    margin: 0 90px 30px;
     border-radius: 20px;
     padding-left: 20px; 
     font-weight: 700;
     
-}
+} 
 .appointment select{
-    position: relative;
-    width: 301px;
-    height: 37px;
-    margin: 30px 90px 30px;
-    display: table;
+    display: block;
+    width: 360px;
+    height: 50px;
+    margin: 0 90px 30px;
     border-radius: 20px;
     padding-left: 20px; 
     font-weight: 700;
@@ -342,28 +248,34 @@ color: #000000;
     -ms-appearance: none;
     
 }
-
-#message{
-    width: 301px;
-    height: 250px;
-    margin: -268px -30px 30px 580px;
-    margin-bottom: 50px;
-    padding: 0px 10px 195px 20px;
+.appointment textarea{
+    
+    float: right;
+    width: 370px;
+    height: 210px;
+    margin: -320px 100px 0 0;
+    border-radius: 20px;
+    padding: 15px;
+    resize: none
+    
     
 }
+
+
 .appointment a{
     background: #6FA9BB;
-    position: absolute;
-    width: 285.62px;
+    
+    width: 370px;
     height: 68.1px;
-    left: 332.47px;
-    top: 306px;
     font-size: 22px;
     font-weight: bold;
     border-radius: 20px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    float: right;
+    margin:-100px 100px 0 0;
     
     transition-duration: 0.3s;
 }
@@ -376,28 +288,23 @@ color: #000000;
 
 /*##########################################################АРТОСКОПИЯ##########################################################    */
 .arthroscopy_frame{
-    position: absolute;
-    width: 1049px;
-    height: 596.04px;
-    left: 238px;
-    top: 2190px;
-
-background: #EDEDED;
-border-radius: 25px;
+    
+    max-width: 1250px;
+    height: auto;
+    margin: 0 auto 130px;
+    background: #EDEDED;
+    border-radius: 25px;
 }
 .arthroscopy{
-    position: absolute;
-    width: 740px;
-    height: 302px;
-    left: 46px;
-    top: 30px;
+    padding: 30px;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
 }
-.arthroscopy h1{
-    position: absolute;
+ .arthroscopy h1{ 
+    margin: 0 0 30px 0;
     width: 336.12px;
     height: 138px;
     background: #6FA9BB;
@@ -411,38 +318,27 @@ border-radius: 25px;
     padding-left: 20px;
     padding-bottom: 10px;
     color: white;
-}
+} 
 
 .arthroscopy p{
-    position: absolute;
-    width: 540.74px;
-    height: 245.53px;
-    top: 210.12px;
+    padding: 0 650px 0 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
-.imgcont1{
-    position: absolute;
-width: 458.04px;
-height: 359.83px;
-left: 536.32px;
-top: 43.34px;
 
-background: #D9D9D9;
-}
 .arthroscopy a{
-    position: absolute;
+    
     display: flex;
+    margin: 100px auto 0px;
     width: 300px;
     height: 68.1px;
-    left: 332.47px;
-    top: 456.94px;
     background: #6FA9BB;
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
     
@@ -453,35 +349,33 @@ background: #D9D9D9;
 
 .arthroscopy a:hover{
     background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
 }
 /*##########################################################КОНЕЦ АРТОСКОПИИ##########################################################    */
 
 /*##########################################################ХТС##########################################################    */
 .legsurg_frame{
-    position: absolute;
-    width: 1049px;
-    height: 596.04px;
-    left: 238px;
-    top: 2920px;
+    
+    max-width: 1250px;
+    height: auto;
+    margin: 0 auto 130px;
+    background: #EDEDED;
+    border-radius: 25px;
 
-background: #EDEDED;
-border-radius: 25px;
 }
 .legsurg{
-    position: absolute;
-    width: 740px;
-    height: 302px;
-    left: 46px;
-    top: 30px;
+    
+   padding: 30px;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
 }
 .legsurg h1{
-    position: absolute;
+    
+    margin: 0 0 30px 0;
     width: 336.12px;
     height: 138px;
     background: #6FA9BB;
@@ -498,34 +392,25 @@ border-radius: 25px;
 }
 
 .legsurg p{
-    position: absolute;
-    width: 540.74px;
-    height: 245.53px;
-    top: 210.12px;
+    
+     padding: 0 650px 0 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
-.imgcont2{
-    position: absolute;
-width: 458.04px;
-height: 359.83px;
-left: 536.32px;
-top: 43.34px;
 
-background: #D9D9D9;
-}
 .legsurg a{
-    position: absolute;
-    width: 285.62px;
-    height: 68.1px;
-    left: 332.47px;
-    top: 456.94px;
-    background: #6FA9BB;
+    
     display: flex;
-    justify-content: center;
+    margin: 100px auto 0px;
+    width: 300px;
+    height: 68.1px;
+    background: #6FA9BB;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
     
@@ -539,30 +424,24 @@ background: #D9D9D9;
 }
 /*##########################################################КОНЕЦ ХТС##########################################################    */
 /*##########################################################КОЛЕНО##########################################################    */
-
 .kneesurg_frame{
-    position: absolute;
-    width: 1049px;
-    height: 596.04px;
-    left: 238px;
-    top: 3650px;
-
-background: #EDEDED;
-border-radius: 25px;
+    
+    max-width: 1250px;
+    height: auto;
+    margin: 0 auto 130px;
+    background: #EDEDED;
+    border-radius: 25px;
 }
 .kneesurg{
-    position: absolute;
-    width: 740px;
-    height: 302px;
-    left: 46px;
-    top: 30px;
+    padding: 30px;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
 }
-.kneesurg h1{
-    position: absolute;
+ .kneesurg h1{ 
+    margin: 0 0 30px 0;
     width: 336.12px;
     height: 138px;
     background: #6FA9BB;
@@ -576,73 +455,61 @@ border-radius: 25px;
     padding-left: 20px;
     padding-bottom: 10px;
     color: white;
-}
+} 
 
 .kneesurg p{
-    position: absolute;
-    width: 540.74px;
-    height: 245.53px;
-    top: 210.12px;
+    padding: 0 650px 0 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
-.imgcont3{
-    position: absolute;
-width: 458.04px;
-height: 359.83px;
-left: 536.32px;
-top: 43.34px;
 
-background: #D9D9D9;
-}
 .kneesurg a{
-    position: absolute;
-    width: 285.62px;
-    height: 68.1px;
-    left: 332.47px;
-    top: 456.94px;
-    background: #6FA9BB;
+    
     display: flex;
-    justify-content: center;
+    margin: 100px auto 0px;
+    width: 300px;
+    height: 68.1px;
+    background: #6FA9BB;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
     
     transition-duration: 0.3s;
+    
+
 }
+
 .kneesurg a:hover{
     background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
 }
 /*##########################################################КОНЕЦ КОЛЕНА##########################################################    */
 /*##########################################################ОСТЕОТОМИЯ##########################################################    */
 
 .osteotomy_frame{
-    position: absolute;
-    width: 1049px;
-    height: 596.04px;
-    left: 238px;
-    top: 4380px;
-
-background: #EDEDED;
-border-radius: 25px;
+    
+    max-width: 1250px;
+    height: auto;
+    margin: 0 auto 130px;
+    background: #EDEDED;
+    border-radius: 25px;
 }
 .osteotomy{
-    position: absolute;
-    width: 740px;
-    height: 302px;
-    left: 46px;
-    top: 30px;
+    padding: 30px;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
 }
-.osteotomy h1{
-    position: absolute;
+ .osteotomy h1{ 
+    margin: 0 0 30px 0;
     width: 336.12px;
     height: 138px;
     background: #6FA9BB;
@@ -656,231 +523,142 @@ border-radius: 25px;
     padding-left: 20px;
     padding-bottom: 10px;
     color: white;
-}
+} 
 
 .osteotomy p{
-    position: absolute;
-    width: 540.74px;
-    height: 245.53px;
-    top: 210.12px;
+    padding: 0 650px 0 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
-.imgcont4{
-    position: absolute;
-width: 458.04px;
-height: 359.83px;
-left: 536.32px;
-top: 43.34px;
 
-background: #D9D9D9;
-}
 .osteotomy a{
-    position: absolute;
-    width: 285.62px;
+    
+    display: flex;
+    margin: 100px auto 0px;
+    width: 300px;
     height: 68.1px;
-    left: 332.47px;
-    top: 456.94px;
     background: #6FA9BB;
-    display:flex;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
     
     transition-duration: 0.3s;
     
+
 }
+
 .osteotomy a:hover{
     background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
 }
 /*##########################################################БЛОГ##########################################################    */
 
 .blog{
-    position: absolute;
-    width: 985px;
-    height: 244px;
-    left: 265px;
-    top: 5300px;
-    justify-content: space-around;
+    max-width: 100%;
+    margin: 0 auto 130px;
+ 
 }
+
 .blog h1{
     font-style: normal;
     font-size: 30px;
     font-weight: 700;
     line-height: 37px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-bottom: 29px;
+    
 }
-.recframe{
-    position: absolute;
-    float: left;
+.blog_container{
+    max-width: 1049px;
+    margin: 0 auto;
+    
+}
+.blog_container div{
+    display: inline-block;
+    margin: 40px 30px 0px 30px;
     width: 199px;
     height: 244px;
-    left: 36px;
-    top: 85px;
-    background: #EDEDED;
     border-radius: 20px;
+    background: #EDEDED;
 }
-.recframe img{
+.services_container div img{
     padding: 25px 36px 25px;
 }
-.recframe a {
-    width: 180px;
+
+.blog_container div a{
+   width: 180px;
     height: 54px;
     text-align: center;
     font-weight: bold;
     margin-left: 10px;
-    display:flex;
+    display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
-    color: white;
     background: #6FA9BB;
-    border-radius: 20px; 
+    border-radius: 20px;
     
-    transition-duration: 0.3s;
+    transition-duration: 0.3s 
 }
+
+
 .recframe a:hover{
     background: rgba(0,0,0,0);
 	color: black;
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
 
-.artframe{
-    position:absolute;
-    float: left;
-    width: 200px;
-    height: 244px;
-    left: 275px;
-    top: 85px;
-    background: #EDEDED;
-    border-radius: 20px;
-    
-}
-.artframe a{
-    width: 180px;
-    height: 54px;
-    text-align: center;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: #6FA9BB;
-    border-radius: 20px;
-    
-    transition-duration: 0.3s;
-}
+
+
+
 .artframe a:hover{
     background: rgba(0,0,0,0);
 	color: black;
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
-.artframe img{
-    padding: 25px 45px 25px;
-}
-.qualframe{
-    position: absolute;
-    float: left;
-    width: 200px;
-    height: 244px;
-    left: 514px;
-    top: 85px;
-    background: #EDEDED;
-    border-radius: 20px;
-    
-}
-.qualframe a{
-    width: 180px;
-    height: 54px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: #6FA9BB;
-    border-radius: 20px;
-    
-    transition-duration: 0.3s;
-}
+
+
+
 .qualframe a:hover{
     background: rgba(0,0,0,0);
 	color: black;
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
-.qualframe img{
-    padding: 25px 44px 25px;
-}
-.patentframe{
-    position: absolute;
-    float: left;
-    width: 200px;
-    height: 244px;
-    left: 753px;
-    top: 85px;
-    background: #EDEDED;
-    border-radius: 20px;
-}
-.patentframe a{
-    width: 180px;
-    height: 54px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: #6FA9BB;
-    border-radius: 20px;
-    
-    transition-duration: 0.3s;
-}
+
+
 .patentframe a:hover{
     background: rgba(0,0,0,0);
 	color: black;
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
-.patentframe img{
-    padding: 5px 20px 0px;
-}
+
 /*##########################################################КОНЕЦ БЛОГА##########################################################    */
 /*##########################################################РЕКОМЕНДАЦИИ##########################################################    */
 
 .recomend_frame{
-    position: absolute;
-    width: 1049px;
-    height: 596.04px;
-    left: 238px;
-    top: 6030px;
-
+    
+    max-width: 1250px;
+    height: auto;
+    margin: 0 auto 130px;
     background: #EDEDED;
     border-radius: 25px;
 }
 .recomend{
-    position: absolute;
-    width: 740px;
-    height: 302px;
-    left: 46px;
-    top: 30px;
+    padding: 30px;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
 }
-.recomend h1{
-    position: absolute;
+ .recomend h1{ 
+    margin: 0 0 30px 0;
     width: 336.12px;
     height: 138px;
     background: #6FA9BB;
@@ -894,50 +672,39 @@ background: #D9D9D9;
     padding-left: 20px;
     padding-bottom: 10px;
     color: white;
-}
+} 
 
 .recomend p{
-    position: absolute;
-    width: 540.74px;
-    height: 245.53px;
-    top: 210.12px;
+    padding: 0 650px 0 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    
 }
 
-
-.recs{
-    position: absolute;
-width: 458.04px;
-height: 359.83px;
-left: 536.32px;
-top: 43.34px;
-
-background: #D9D9D9;
-}
 .recomend a{
-    position: absolute;
-    width: 285.62px;
-    height: 68.1px;
-    left: 332.47px;
-    top: 456.94px;
-    background: #6FA9BB;
+    
     display: flex;
-    justify-content: center;
+    margin: 100px auto 0px;
+    width: 300px;
+    height: 68.1px;
+    background: #6FA9BB;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
     
     transition-duration: 0.3s;
     
+
 }
+
 .recomend a:hover{
     background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
 }
 /*##########################################################КОНЕЦ РЕКОМЕНДАЦИЙ##########################################################    */
 
@@ -946,28 +713,23 @@ background: #D9D9D9;
 
 
 .articles_frame{
-    position: absolute;
-    width: 1049px;
-    height: 596.04px;
-    left: 238px;
-    top: 6760px;
-
+    
+    max-width: 1250px;
+    height: auto;
+    margin: 0 auto 130px;
     background: #EDEDED;
     border-radius: 25px;
 }
 .articles{
-    position: absolute;
-    width: 740px;
-    height: 302px;
-    left: 46px;
-    top: 30px;
+    padding: 30px;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
 }
-.articles h1{
-    position: absolute;
+ .articles h1{ 
+    margin: 0 0 30px 0;
     width: 336.12px;
     height: 138px;
     background: #6FA9BB;
@@ -981,74 +743,61 @@ background: #D9D9D9;
     padding-left: 20px;
     padding-bottom: 10px;
     color: white;
-}
+} 
 
 .articles p{
-    position: absolute;
-    width: 540.74px;
-    height: 245.53px;
-    top: 210.12px;
+    padding: 0 650px 0 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
-.arts{
-    position: absolute;
-width: 458.04px;
-height: 359.83px;
-left: 536.32px;
-top: 43.34px;
 
-background: #D9D9D9;
-}
 .articles a{
-    position: absolute;
-    width: 285.62px;
-    height: 68.1px;
-    left: 332.47px;
-    top: 456.94px;
-    background: #6FA9BB;
     display: flex;
-    justify-content: center;
+    margin: 100px auto 0px;
+    width: 300px;
+    height: 68.1px;
+    background: #6FA9BB;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
     
     transition-duration: 0.3s;
+    
+
 }
+
 .articles a:hover{
     background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
 }
 /*##########################################################КОНЕЦ СТАТЕЙ##########################################################    */
 
 /*##########################################################КВАЛИФИКАЦИИ##########################################################    */
 
 .qualifications_frame{
-    position: absolute;
-    width: 1049px;
-    height: 596.04px;
-    left: 238px;
-    top: 7490px;
-
+    
+    max-width: 1250px;
+    height: auto;
+    margin: 0 auto 130px;
     background: #EDEDED;
     border-radius: 25px;
 }
 .qualifications{
-    position: absolute;
-    width: 740px;
-    height: 302px;
-    left: 46px;
-    top: 30px;
+    padding: 30px;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
 }
-.qualifications h1{
-    position: absolute;
+ .qualifications h1{ 
+    margin: 0 0 30px 0;
     width: 336.12px;
     height: 138px;
     background: #6FA9BB;
@@ -1062,47 +811,39 @@ background: #D9D9D9;
     padding-left: 20px;
     padding-bottom: 10px;
     color: white;
-}
+} 
 
 .qualifications p{
-    position: absolute;
-    width: 540.74px;
-    height: 245.53px;
-    top: 210.12px;
+    padding: 0 650px 0 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
-.qual{
-    position: absolute;
-width: 458.04px;
-height: 359.83px;
-left: 536.32px;
-top: 43.34px;
 
-background: #D9D9D9;
-}
 .qualifications a{
-    position: absolute;
-    width: 285.62px;
-    height: 68.1px;
-    left: 332.47px;
-    top: 456.94px;
-    background: #6FA9BB;
+    
     display: flex;
+    margin: 100px auto 0px;
+    width: 300px;
+    height: 68.1px;
+    background: #6FA9BB;
+    align-items: center;
+    text-align: center;
     justify-content: center;
-    align-items:center;
+    padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
     
     transition-duration: 0.3s;
+    
+
 }
 
 .qualifications a:hover{
     background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
 }
 /*##########################################################КОНЕЦ КВАЛИФИКАЦИИ##########################################################    */
 
@@ -1110,28 +851,23 @@ background: #D9D9D9;
 
 
 .patents_frame{
-    position: absolute;
-    width: 1049px;
-    height: 596.04px;
-    left: 238px;
-    top: 8220px;
-
+    
+    max-width: 1250px;
+    height: auto;
+    margin: 0 auto 130px;
     background: #EDEDED;
     border-radius: 25px;
 }
 .patents{
-    position: absolute;
-    width: 740px;
-    height: 302px;
-    left: 46px;
-    top: 30px;
+    padding: 30px;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
 }
-.patents h1{
-    position: absolute;
+ .patents h1{ 
+    margin: 0 0 30px 0;
     width: 336.12px;
     height: 138px;
     background: #6FA9BB;
@@ -1145,118 +881,114 @@ background: #D9D9D9;
     padding-left: 20px;
     padding-bottom: 10px;
     color: white;
-}
+} 
 
 .patents p{
-    position: absolute;
-    width: 540.74px;
-    height: 245.53px;
-    top: 210.12px;
+    padding: 0 650px 0 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
-.pat{
-    position: absolute;
-width: 458.04px;
-height: 359.83px;
-left: 536.32px;
-top: 43.34px;
 
-background: #D9D9D9;
-}
 .patents a{
-    position: absolute;
-    width: 285.62px;
-    height: 68.1px;
-    left: 332.47px;
-    top: 456.94px;
-    background: #6FA9BB;
+    
     display: flex;
+    margin: 100px auto 0px;
+    width: 300px;
+    height: 68.1px;
+    background: #6FA9BB;
+    align-items: center;
+    text-align: center;
     justify-content: center;
-    align-items:center;
+    padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
     
     transition-duration: 0.3s;
+    
+
 }
+
 .patents a:hover{
     background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
 }
 /*##########################################################КОНЕЦ ПАТЕНТОВ##########################################################    */
 
 /*##########################################################ОСТАВЬТЕ ЗАЯВКУ##########################################################    */
-
-.appointment2_header h1{
-    position: absolute;
-    width: 357px;
-    height: 59px;
-    left: 615px;
-    top: 8950px;
-
-    font-family: 'Montserrat';
+.appointment_frame2{
+    max-width: 1050px;
+    height: auto;
+    margin: 150px auto 150px;
+}
+.appointment_frame2 h1{
     font-style: normal;
+    font-size: 30px;
     font-weight: 700;
-    font-size: 35px;
-    line-height: 43px;
-    display: flex;
-    align-items: center;
+    line-height: 37px;
     text-align: center;
-
-color: #000000;
+    margin: 0 0 33px;
 }
 .appointment2{
-    position: absolute;
-    width: 962px;
-    height: 388px;
-    left: 282px;
-    top: 9050px;
-    background: #EDEDED;
-    border-radius: 20px;
-    
+    border-radius: 30px;
+    background: #eee;
+    padding: 20px;
 }
-.appointment2 input{
-    width: 301px;
-    height: 37px;
-    margin: 30px 90px 30px;
-    display: table;
+
+
+.appointment2  input{ 
+    display: block;
+    width: 360px;
+    height: 50px;
+    margin: 0 90px 30px;
     border-radius: 20px;
     padding-left: 20px; 
     font-weight: 700;
     
-}
+} 
 .appointment2 select{
-    width: 301px;
-    height: 37px;
-    margin: 30px 90px 30px;
-    display: table;
+    display: block;
+    width: 360px;
+    height: 50px;
+    margin: 0 90px 30px;
     border-radius: 20px;
     padding-left: 20px; 
     font-weight: 700;
-}
-#message{
-    width: 301px;
-    height: 250px;
-    margin: -268px -30px 30px 580px;
-    padding: 0px 10px 165px 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
     
 }
+.appointment2 textarea{
+    
+    float: right;
+    width: 370px;
+    height: 210px;
+    margin: -320px 100px 0 0;
+    border-radius: 20px;
+    padding: 15px;
+    resize: none
+    
+    
+}
+
+
 .appointment2 a{
     background: #6FA9BB;
-    position:absolute;
-    width: 285.62px;
+    
+    width: 370px;
     height: 68.1px;
-    left: 332.47px;
-    top: 306px;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: bold;
     border-radius: 20px;
+    
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+    float: right;
+    margin:-100px 100px 0 0;
     
     transition-duration: 0.3s;
 }
@@ -1267,26 +999,20 @@ color: #000000;
 }
 
 footer{
-    position: absolute;
-    width: 538px;
+    width: 528px;
     height: 26px;
-    left: 541px;
-    top: 9540px;
+    margin: 0 auto;
 }
 .footmenu{
     
-    
-    float: left;
     display: inline-block;
 }
 .footmenu li{
-    margin: 15px;
-    
+    margin: 0 25px 30px;
     display: inline-block;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 124.5%;
     
     
 }
@@ -1298,3 +1024,4 @@ footer{
 	color: white;;
 	
 }
+
