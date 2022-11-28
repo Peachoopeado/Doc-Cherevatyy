@@ -22,9 +22,9 @@
           </div>
           <div class="menu1" id=menu_1>
               <ul>
-                  <li><a href="#ser">обо мне</a></li>
-                  <li><a href="#blo">наука</a></li>
-                  <li><a href="#hel">образование</a></li>
+                  <li><a href="#about.html">обо мне</a></li>
+                  <li><a href="#ser">услуги</a></li>
+                  <li><a href="#blo">блог</a></li>
                   <li><a href="#app">запись на приём</a></li>
                   <li><a href="#">+7 934 343 34 45</a></li>
               </ul>
@@ -34,7 +34,7 @@
        
        <div class="leadframe">
           
-           <div clas1s="lead" id=leadb>
+           <div class="lead" id=leadb>
                <h1>врачебная врачебность подколенного подбородка и проведение операций по сохранению суставности сустава</h1>
                <h2>доктор суставно-константивных наук, врач травматолог Lorem ipsum dolor sit amet.</h2>
                <a href="#ser">подробнее</a>
@@ -66,21 +66,22 @@
        <div class="appointment_frame">
                <h1>запись на приём</h1>
            <div class="appointment" id=app>
-              <form action="">
-                   <input type="text" placeholder="имя">
-                    <input type="text" placeholder="почта">
-                    <input type="text" placeholder="телефон">
-                    <select name="услуга" id="selser">
+              <form action="php/mail.php" method="post">
+                   <input type="text" name="user_name" placeholder="имя">
+                    <input type="text" name="user_email" placeholder="почта">
+                    <input type="text" name="user_phone" placeholder="телефон">
+                    <select name="user_service" id="selser" placeholder="услуга">
                     <option value="" disabled selected>услуга</option>
-                    <option value="legsurg">хирургия тазобедренного сустава</option>
-                    <option value="kneesurg">хирургия коленного сустава</option>
-                    <option value="osteotomy">корригирующая остеотомия</option>
-                    <option value="arthroscopy">артроскопия</option>
+                    <option value="хирургия тазобедренного сустава">хирургия тазобедренного сустава</option>
+                    <option value="хирургия коленного сустава">хирургия коленного сустава</option>
+                    <option value="корригирующая остеотомия">корригирующая остеотомия</option>
+                    <option value="артроскопия">артроскопия</option>
                 </select>
                 <textarea name="formtext" id="" cols="30" rows="10" placeholder="сообщение"></textarea>
+                <input type="submit" value="записаться на приём">
                </form>
             
-            <a href="#">записаться на приём</a>
+            
               
                
                
@@ -207,7 +208,11 @@
        </footer>
        
    </main>
-    <script src="../src/js/jquery-3.6.1.min.js"></script>
-    <script src="../src/js/scrollScript.js"></script>
+    
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/scrollScript.js"></script>
+    <script src="js/myScript.js"></script>
 </body>
 </html>
