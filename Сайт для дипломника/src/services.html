@@ -14,6 +14,11 @@
 
 <body>
     <main>
+        <header>
+            <?
+            include('nav.php');
+                ?>
+        </header>
         <div class="leadframe">
             <div class="lead" id=leadb>
                 <h1>врачебная врачебность подколенного подбородка и проведение операций по сохранению суставности сустава</h1>
@@ -141,7 +146,8 @@
         <div class="appointment_frame2">
             <h1>запись на приём</h1>
             <div class="appointment2" id=app2>
-                <form action="">
+                <div class="appointment2_container">
+                   <form action="">
                     <input type="text" placeholder="имя">
                     <input type="text" placeholder="почта">
                     <input type="text" placeholder="телефон">
@@ -154,7 +160,9 @@
                     </select>
                     <a href="#">записаться на приём</a>
                     <textarea name="formtext" id="" cols="30" rows="10" placeholder="сообщение"></textarea>
-                </form>
+                </form> 
+                </div>
+                
             </div>
         </div>
         <footer>

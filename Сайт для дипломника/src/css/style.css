@@ -4,7 +4,10 @@
     font-style: normal;
     font-weight: normal;
 }
-body{
+html, body{
+    width: 100%;
+    height: 100%;
+
     background: #DDDDDD;
     
     
@@ -92,6 +95,7 @@ header {
     font-size: 30px;
     line-height: 37px;
     text-align: center;
+    border:   solid #000;
     
 }
 
@@ -140,32 +144,38 @@ header {
     
 }
 .services_container{
-    max-width: 1049px;
-    margin: 0 auto 230px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .services_container div{
     display: inline-block;
-    margin: 40px 30px 0px 30px;
-    width: 199px;
-    height: 243px;
+    width: 300px;
+    height: 390px;
+    margin: 0 0 10px 10px;
     border-radius: 20px;
     background: #EDEDED;
 }
 .services_container div img{
-    padding: 25px 36px 25px;
+    margin: 25px 36px 25px;
 }
 
 .services_container div a{
-    width: 180px;
-    height: 54px;
-    text-align: center;
+    width: 247.83px;
+    height: 80px;
+    text-align: left;
     font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px;
     margin: 0 auto;
     display: flex;
     color: white;
-    
+    align-items: flex-end;
     background: #6FA9BB;
-    border-radius: 20px;
+    border-radius: 10px;
     
     transition-duration: 0.3s 
 }
@@ -575,34 +585,48 @@ header {
     
 }
 .blog_container{
-    max-width: 1049px;
-    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
 .blog_container div{
     display: inline-block;
-    margin: 40px 30px 0px 30px;
-    width: 199px;
-    height: 244px;
+    width: 300px;
+    height: 390px;
+    margin: 0 0 10px 10px;
     border-radius: 20px;
     background: #EDEDED;
 }
-.services_container div img{
-    padding: 25px 36px 25px;
+
+
+.recframe img{
+    margin: 19px 0 18px 48px
+
+}
+.artframe img{
+    margin: 40px 37.5px 30px 37.5px;
+}
+.qualframe img{
+    margin: 40px 37.5px 29px 37.5px;
 }
 
 .blog_container div a{
-   width: 180px;
-    height: 54px;
-    text-align: center;
+    width: 247.83px;
+    height: 80px;
+    text-align: left;
     font-weight: bold;
-    margin-left: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px;
+    margin: 0 auto;
     display: flex;
     color: white;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background: #6FA9BB;
-    border-radius: 20px;
+    border-radius: 10px;
     
     transition-duration: 0.3s 
 }
@@ -919,96 +943,113 @@ header {
 
 /*##########################################################ОСТАВЬТЕ ЗАЯВКУ##########################################################    */
 .appointment_frame2{
-    max-width: 1050px;
-    height: auto;
-    margin: 150px auto 150px;
+    max-width: 100%;
+    margin: 0 auto 130px;
 }
 .appointment_frame2 h1{
-    font-style: normal;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 37px;
     text-align: center;
-    margin: 0 0 33px;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    
 }
 .appointment2{
-    border-radius: 30px;
-    background: #eee;
-    padding: 20px;
-}
-
-
-.appointment2  input{ 
-    display: block;
-    width: 360px;
-    height: 50px;
-    margin: 0 90px 30px;
-    border-radius: 20px;
-    padding-left: 20px; 
-    font-weight: 700;
-    
-} 
-.appointment2 select{
-    display: block;
-    width: 360px;
-    height: 50px;
-    margin: 0 90px 30px;
-    border-radius: 20px;
-    padding-left: 20px; 
-    font-weight: 700;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    
-}
-.appointment2 textarea{
-    
-    float: right;
-    width: 370px;
-    height: 210px;
-    margin: -320px 100px 0 0;
-    border-radius: 20px;
-    padding: 15px;
-    resize: none
-    
-    
-}
-
-
-.appointment2 a{
-    background: #6FA9BB;
-    
-    width: 370px;
-    height: 68.1px;
-    font-size: 22px;
-    font-weight: bold;
-    border-radius: 20px;
-    
+    max-width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    float: right;
-    margin:-100px 100px 0 0;
-    
-    transition-duration: 0.3s;
+    border: 1px solid #000;
+
+
 }
-.appointment2 a:hover{
+.appointment2_container{
+
+    width: 788px;
+    height: auto;
+    background: #EDEDED;
+    border-radius: 20px;
+border: 1px solid #000;
+    flex-wrap: wrap;
+}
+
+
+.left{  
+    display: inline-block;
+    border: 1px solid #000;
+    float: left;
+    margin:30px 0 15px 78px;
+
+    
+}
+.left input,select{
+    display: block;
+    width: 301px;
+    height: 37px;
+    margin-top: 8px;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: #DDDDDD;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: 'Montserrat', serif;
+}
+
+.right{
+    display: inline-block;
+    border: 1px solid #000;
+    margin: 30px 55px 30px 0; 
+    float: right;
+}
+.right textarea,input{
+    display: block;
+}
+.right textarea{
+    resize: none;
+    width: 301px;
+    height: 127px;
+    margin-top: 8px;
+    border-radius: 10px; 
+    padding: 15px;
+}
+.right input{
+    width: 301px;
+    height: 37px;
+    margin-top: 8px;
+    background:#6FA9BB;
+    border-radius: 10px;
+    font-family: 'Montserrat', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+
+    transition-duration: 0.5s;
+}
+
+
+
+.submit:hover{
     background: rgba(0,0,0,0);
 	color: #3a7999;
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
 
 footer{
-    width: 528px;
+    min-width: 100%;
     height: 26px;
-    margin: 0 auto;
+    margin: 0 30px 0 0;
 }
 .footmenu{
     
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footmenu li{
-    margin: 0 25px 30px;
+    margin: 0 5px 30px;
     display: inline-block;
     font-style: normal;
     font-weight: 700;

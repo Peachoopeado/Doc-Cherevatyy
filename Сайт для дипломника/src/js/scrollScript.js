@@ -1,8 +1,9 @@
 'use strict';
 
+
 $(document).ready(function(){
     $("#menu_1").on("click", "a", function (event){
-        event.preventDefault();
+        
         
         var id = $(this).attr('href'),
             top = $(id).offset().top -240;
