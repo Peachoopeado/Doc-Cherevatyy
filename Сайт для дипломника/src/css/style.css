@@ -83,20 +83,24 @@ header {
     background: #EDEDED;
     border-radius: 20px;
     flex-wrap: wrap;
-    background-image: url(../img/lead_img.png);
-    background-repeat: no-repeat;
-    background-position: right;
+    border: 1px solid #000;
+    
 }
 .lead{
-    width: 720px;
-    height: 302px;
+    display: flex;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
     text-align: center;
     border:   solid #000;
-    
+  
+}
+@media (max-width: 971px) {
+  .lead img {
+    display: none;
+  }
 }
 
 .lead h1{
@@ -112,13 +116,13 @@ header {
     width: 150px;
     height: 50px;
     background: #6FA9BB;
-    display: flex;
+    
     
     display: inline-block;
     padding: 5px;
     font-size: 22px;
     border-radius: 20px;
-    
+    color: #F1F1F1;
     transition-duration: 0.3s;
 }
 .lead a:hover{
@@ -351,7 +355,7 @@ header {
     padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
-    
+    color: #F1F1F1;
     transition-duration: 0.3s;
     
 
@@ -369,7 +373,7 @@ header {
     
     max-width: 1250px;
     height: auto;
-    margin: 0 auto 130px;
+    margin:  auto 130px;
     background: #EDEDED;
     border-radius: 25px;
 
@@ -423,7 +427,7 @@ header {
     padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
-    
+    color: #F1F1F1;
     transition-duration: 0.3s;
 
 }
@@ -488,7 +492,7 @@ header {
     padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
-    
+    color: #F1F1F1;
     transition-duration: 0.3s;
     
 
@@ -556,7 +560,7 @@ header {
     padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
-    
+    color: #F1F1F1;
     transition-duration: 0.3s;
     
 
@@ -719,7 +723,7 @@ header {
     padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
-    
+    color: #F1F1F1;
     transition-duration: 0.3s;
     
 
@@ -789,7 +793,7 @@ header {
     padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
-    
+    color: #F1F1F1;
     transition-duration: 0.3s;
     
 
@@ -858,7 +862,7 @@ header {
     padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
-    
+    color: #F1F1F1;
     transition-duration: 0.3s;
     
 
@@ -928,7 +932,7 @@ header {
     padding: 15px 0px;
     font-size: 22px;
     border-radius: 20px;
-    
+    color: #F1F1F1;
     transition-duration: 0.3s;
     
 
@@ -954,34 +958,48 @@ header {
     
 }
 .appointment2{
-    max-width: 100%;
-    margin: 0 auto;
+    
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
+    flex-wrap: wrap;    
+    
 
 
 }
 .appointment2_container{
-
+    display: flex;
     width: 788px;
     height: auto;
     background: #EDEDED;
     border-radius: 20px;
-border: 1px solid #000;
-    flex-wrap: wrap;
+    border: 1px solid #000;
+    
+    justify-content: center;
+    align-items: center;
+    
+
 }
 
-
-.left{  
+.appointment2_container div{
     display: inline-block;
     border: 1px solid #000;
-    float: left;
-    margin:30px 0 15px 78px;
-
+    margin: 20px 10px 20px 10px;
     
 }
+@media (min-width: 480px)  {
+  .appointment2_container  {
+    padding: 10px 10px 10px 75px ;
+  }
+}
+@media (min-width: 768px)  {
+  .appointment2_container  {
+    padding: 10px 10px 10px 10px ;
+  }
+}
+
+
 .left input,select{
     display: block;
     width: 301px;
@@ -998,12 +1016,7 @@ border: 1px solid #000;
     font-family: 'Montserrat', serif;
 }
 
-.right{
-    display: inline-block;
-    border: 1px solid #000;
-    margin: 30px 55px 30px 0; 
-    float: right;
-}
+
 .right textarea,input{
     display: block;
 }
@@ -1066,3 +1079,236 @@ footer{
 	
 }
 
+/*######################################ABOUT############################*/
+
+.leadframe_about{
+    margin:  33px auto 250px ;
+    max-width: 1250px;
+    height: 552px;
+    background: #EDEDED;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+}
+
+.leadabout_container{
+    max-width: 100%; 
+    display: flex;
+    margin-left: 80px;
+
+
+}
+
+.leadabout_container div{
+    display: inlint-block;
+    margin: 30px 30px 10px 30px;  
+    
+
+    
+    
+}
+.txt{
+    display: inline-block;  
+    border: 1px solid #000;
+    width: 678px;
+    height: 488px;
+    font-weight: 700;
+}
+.txt img{
+    margin: 0 0 20px 30px  ;
+}
+.txt h1{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 5px 0 10px 30px; 
+}
+.txt h2{
+    font-size: 20px;
+    margin-left: 30px;
+    font-weight: bold;  
+}
+
+.about_large_text{
+    display: flex;
+    max-width: 100%;
+    margin: 30px auto 130px;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_large_text_container{
+    display: flex;
+    width: 1200px;
+    height: auto;
+    background: #EDEDED;
+    border-radius: 45px;
+
+}
+.imgblock{
+    display: inline-block;
+    margin: 60px 10px 0px 30px
+}
+.imgblock h1{
+    width: 204px;
+    height: 55px;
+    background: #6FA9BB;
+    border-radius: 15px;
+
+    display: flex;
+    margin: 0 auto 50px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    color: #F1F1F1;
+    font-weight: 700;
+
+}
+.imgblock img{
+    display: block;
+    margin: 0 0 60px 0; 
+}
+.textblock{
+    border: 1px solid #000;
+    width: 1000px;
+    margin: 60px 30px 130px 30px;
+    
+}
+.textblock p{
+    margin:0 0 20px 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: left;
+}
+/*######################################SCIENCE############################*/
+
+.science_large_text{
+    display: flex;
+    max-width: 100%;
+    margin: 30px auto 130px;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.science_large_text_container{
+    display: flex;
+    width: 1200px;
+    height: auto;
+    background: #EDEDED;
+    border-radius: 45px;
+}
+.imgblock_science{
+    display: inline-block;
+    margin: 60px 10px 0px 30px
+}
+.imgblock_science img{
+    display: block;
+
+    margin: 0 0 60px 0; 
+}
+.imgblock_science h1{
+    width: 254px;
+    height: 55px;
+    background: #6FA9BB;
+    border-radius: 15px;
+
+    display: flex;
+    margin: 0 auto 50px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    color: #F1F1F1;
+    font-weight: 700;
+
+}
+
+.textblock_science{
+    border: 1px solid #000;
+    width: 1000px;
+    margin: 60px 30px 130px 30px;
+    
+}
+.textblock_science li{
+    margin:0 0 20px 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: left;
+    background: url('../img/icons/marker.png') 5px 9px no-repeat;
+    background-size: 12px;
+    padding: 0 0 0 30px;
+}
+
+/*######################################EDUCATION############################*/
+
+.education_large_text{
+    display: flex;
+    max-width: 100%;
+    margin: 30px auto 130px;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.education_large_text_container{
+    display: flex;
+    width: 1200px;
+    height: auto;
+    background: #EDEDED;
+    border-radius: 45px;
+}
+
+.imgblock_education{
+    display: inline-block;
+    margin: 60px 10px 0px 30px
+}
+
+.imgblock_education img{
+    display: block;
+    margin: 0 0 30px 0; 
+}
+.imgblock_education img:nth-of-type(1){
+    margin: 0 0 30px 40px;
+}
+.imgblock_education img:nth-of-type(2){
+    margin: 0 0 30px 40px;
+}
+
+
+.imgblock_education h1{
+    width: 254px;
+    height: 55px;
+    background: #6FA9BB;
+    border-radius: 15px;
+
+    display: flex;
+    margin: 0 auto 50px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    color: #F1F1F1;
+    font-weight: 700;
+
+}
+
+.textblock_education{
+    border: 1px solid #000;
+    width: 1000px;
+    margin: 60px 30px 130px 30px;
+    
+}
+.textblock_education li{
+    margin:0 0 20px 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: left;
+    background: url('../img/icons/marker.png') 5px 9px no-repeat;
+    background-size: 12px;
+    padding: 0 0 0 30px;
+}
