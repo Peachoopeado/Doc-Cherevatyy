@@ -14,11 +14,43 @@
 
 <body>
     <main>
-        <header>
-            <?
-            include('nav.php');
-                ?>
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="" class="header__logo">
+                        <img src="img/icons/logo.png" alt="">
+
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <h1>Doc. Cherevatyy</h1>
+                            <li>
+                                <a href="" class="header__link">Обо мне</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">Блог</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">Помощь</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">Записаться на приём</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">+7999999991</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
+        
         <div class="leadframe">
             <div class="lead" id=leadb>
                 <div class="txt">
@@ -105,6 +137,7 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/scrollScript.js"></script>
     <script src="js/myScript.js"></script>
+    <script src="js/burgerScript.js"></script>
 </body>
 
 </html>

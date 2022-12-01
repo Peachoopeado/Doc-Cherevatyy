@@ -16,70 +16,181 @@ html, body{
 main {
     font-family: 'Montserrat', sans-serif;
     position: relative;
+}
 /*##########################################################ШАПКА##########################################################    */
-}
-header {
-    position: sticky;
-    max-width: 1350px;
-    height: 81px;
-    top: 30px;
+
+.container{
+    max-width: 1180px;
     margin: 0 auto;
-    background: rgba(217, 217, 217, 0.4); 
-    border-radius: 20px;
+    padding: 0 10px;
     
-    
-}
-.logo{
-    float: left;
-    margin: 25px 15px 15px 90px;
-    font-weight:bold;
-    
-    height: 35px;
-    background: #6FA9BB;
-    border-radius: 7px;
-    
-    
-
+    z-index: 51;
 }
 
+.header{
+    position: fixed;
+    align-items: center;
 
-.logo h1{
-    padding: 10px 6.6px;
-    font-weight: 1000;
-    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    z-index: 50;
+
 }
-.title_container{
-    float: left;
-    margin: 30px 60px 30px 2px;
-    font-size: 25px;
-}
-.menu1{
-    float:left;
-    margin: 30px 17px 30px 85px;
-    font-size: 20px;
+.header:before{
+    
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(217, 217, 217, 0.4);
+    z-index: 3;
     
 }
-
-.menu1 li{
-    float: left;
-    margin-right: 15px;
+.header__body{
+    position: relative;
     display: flex;
-       
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+
+}
+.header__logo{
+    flex: 0 0 60px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
 }
 
-.menu1 a{
-    transition-duration: 0.3s;
+.header__logo img{
+    max-width: 100%;
+    display: block;
 }
-.menu1 a:hover{
-    font-size: 25px;
-    color:darkcyan;
+.header__burger{
+    display: none;
 }
+.header__menu{
+
+}
+.header__list{
+    display: flex;
+    position: relative;
+    z-index: 3;
+}
+.header__list h1{
+    font-size: 20px;
+    padding: 0 120px 0 0;
+    font-weight: 700;;
+}
+.header__list li{
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+.header__link{
+    text-transform: lowercase;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media (max-width:767px){
+    body.lock{
+        overflow: hidden;
+    }
+    .header__body{
+        height: 50px;
+        padding: 0 10px 0 30px;
+
+    }
+    .header__logo{
+        flex: 0 0 40px;
+    }
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+    .header__burger span{
+        position: absolute;
+        background-color: #000;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: 0.3s;
+    }
+    .header__burger:before,
+    .header__burger:after{
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: 0.3s;
+    }
+    .header__burger:before{
+        top: 0;
+    }
+    .header__burger:after{
+        bottom: 0;
+    }
+    .header__burger.active:before{
+        transform:rotate(45deg);
+        top: 9px
+
+    }
+    .header__burger.active:after{
+        transform:rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span{
+        transform: scale(0);
+    }
+    .header__menu{
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(24,181,164, 0.75);
+        padding: 70px 10px 20px 10px;
+        z-index: 2;
+        transition: 0.3s;
+        overflow: auto;
+    }
+    .header__menu.active{
+        left: 0;
+
+    }
+    .header__list{
+        display: block;
+    }
+    .header__list h1{
+        margin: 0 0 20px 0;
+    }
+    .header__list li{
+        margin: 0 0 20px 0px;
+
+    }
+}
+
+
 /*##########################################################КОНЕЦ ШАПКИ##########################################################    */
 /*##########################################################ЛИД##########################################################    */
 .leadframe{
-    margin:  33px auto 250px ;
+    margin:  150px auto 250px ;
     max-width: 1250px;
-    height: 552px;
+    height: 775px;
     background: #EDEDED;
     border-radius: 20px;
     flex-wrap: wrap;
@@ -111,7 +222,7 @@ header {
     font-size: 20px;
     margin-bottom: 25px;
 }
-.lead a{
+.lead_input{
     
     width: 150px;
     height: 50px;
@@ -125,7 +236,7 @@ header {
     color: #F1F1F1;
     transition-duration: 0.3s;
 }
-.lead a:hover{
+.lead_input:hover{
     background: rgba(0,0,0,0);
 	color: #3a7999;
 	box-shadow: inset 0 0 0 3px #3a7999;
@@ -971,7 +1082,7 @@ header {
 .appointment2_container{
     display: flex;
     width: 788px;
-    height: auto;
+    min-height: 300px;
     background: #EDEDED;
     border-radius: 20px;
     border: 1px solid #000;
@@ -988,22 +1099,18 @@ header {
     margin: 20px 10px 20px 10px;
     
 }
-@media (min-width: 480px)  {
-  .appointment2_container  {
-    padding: 10px 10px 10px 75px ;
+@media (max-width: 767px)  {
+  .appointment2_container div {
+        display: block;
   }
 }
-@media (min-width: 768px)  {
-  .appointment2_container  {
-    padding: 10px 10px 10px 10px ;
-  }
-}
+
 
 
 .left input,select{
     display: block;
-    width: 301px;
-    height: 37px;
+    width: 320px;
+    height: 45px;
     margin-top: 8px;
     padding-left: 15px;
     font-size: 15px;
@@ -1022,15 +1129,15 @@ header {
 }
 .right textarea{
     resize: none;
-    width: 301px;
-    height: 127px;
+    width: 320px;
+    height: 151px;
     margin-top: 8px;
     border-radius: 10px; 
     padding: 15px;
 }
 .right input{
-    width: 301px;
-    height: 37px;
+    width: 320px;
+    height: 45px;
     margin-top: 8px;
     background:#6FA9BB;
     border-radius: 10px;
