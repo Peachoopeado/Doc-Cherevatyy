@@ -85,6 +85,9 @@ main {
 .header__menu {
     
 }
+.header__menu a.parent{
+    margin: 0px 10px 0px 0px;
+}
 .header__menu li{
     position: relative;
 }
@@ -92,9 +95,7 @@ main {
 .header__list>li{
     margin: 0 10px 0 0;
 }
-.header__list>li:hover .sublist{
-    display: block;
-}
+
 .sublist{
     display: none;
     position: absolute;
@@ -116,6 +117,35 @@ main {
     padding: 5px 10px;
 
 }
+.arrow{
+    display: none;
+    position: absolute;
+    right: 8;
+    top: 8px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #000;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+.arrow.active{
+    transform: rotate(-180deg);
+}
+.menu__arrow{
+
+}
+body.mouse .header__list>li:hover .sublist{
+    display: block;
+}
+body.touch .sublist.open{
+    display: block;
+
+}
+body.touch .arrow{
+    display: inline-block;
+}
+
+
 .header__list {
     display: flex;
     position: relative;
@@ -247,6 +277,11 @@ main {
     .header__list li {
         margin: 0 0 20px 0px;
 
+    }
+    .sublist{
+        position: relative;
+        left: 0;
+        top: 0;
     }
 }
 
