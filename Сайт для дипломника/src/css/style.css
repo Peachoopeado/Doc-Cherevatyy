@@ -272,7 +272,7 @@ body.touch .arrow{
         left: 100%;
         width: 100%;
         height: 100%;
-        background-color: rgba(24, 181, 164, 0.75);
+        background-color: rgba(172, 172, 172, 0.75);
         padding: 70px 10px 20px 10px;
         z-index: 2;
         transition: 0.3s;
@@ -369,14 +369,14 @@ body.touch .arrow{
 
 .lead_input {
 
-    width: 150px;
+    width: 270px;
     height: 50px;
     background: #6FA9BB;
     display: inline-block;
     padding: 5px;
     font-size: 22px;
     border-radius: 20px;
-    color: #000;
+    color: #fff;
     transition-duration: 0.3s;
 }
 
@@ -444,35 +444,12 @@ body.touch .arrow{
 }
 
 
-.bodyframe a:hover {
-    background: rgba(0, 0, 0, 0);
+.services a:hover {
+    background: #26CFC5;
     color: black;
     box-shadow: inset 0 0 0 3px #3a7999;
 }
 
-
-
-
-.legframe a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: black;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-
-
-.handframe a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: black;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-
-.shoulderframe a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: black;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
 
 
 /*##########################################################КОНЕЦ УСЛУГ##########################################################    */
@@ -915,8 +892,8 @@ body.touch .arrow{
 }
 
 
-.recframe a:hover {
-    background: rgba(0, 0, 0, 0);
+.blog a:hover {
+    background: #26CFC5;
     color: black;
     box-shadow: inset 0 0 0 3px #3a7999;
 }
@@ -924,26 +901,7 @@ body.touch .arrow{
 
 
 
-.artframe a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: black;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
 
-
-
-.qualframe a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: black;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-
-.patentframe a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: black;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
 
 /*##########################################################КОНЕЦ БЛОГА##########################################################    */
 /*##########################################################РЕКОМЕНДАЦИИ##########################################################    */
@@ -1338,8 +1296,7 @@ input {
 
 
 .submit:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
+    background: #26CFC5;
     box-shadow: inset 0 0 0 3px #3a7999;
 }
 
