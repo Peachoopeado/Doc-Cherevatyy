@@ -1461,7 +1461,7 @@ footer {
     .imgblock img{
         display: none;
     }
-    .par1:{
+    .par1{
         display: block;
         float: right;
     }
@@ -1502,6 +1502,7 @@ footer {
     height: auto;
     background: #EDEDED;
     border-radius: 45px;
+    
 }
 
 .imgblock_science {
@@ -1534,9 +1535,14 @@ footer {
 
 .textblock_science {
     border: 1px solid #000;
-    width: 1000px;
+    
     margin: 60px 30px 130px 30px;
 
+}
+@media(max-width:767px){
+    .science_large_text_container{
+        display: block;
+    }
 }
 
 .textblock_science li {
