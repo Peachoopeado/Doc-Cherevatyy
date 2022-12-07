@@ -1268,6 +1268,16 @@ select {
 .right textarea,
 input {
     display: block;
+    
+}
+input:focus{
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(51, 133, 255, 0.664);
+    
+}
+input:required{
+    border: 1px solid red;
+    
 }
 
 .right textarea {
@@ -1277,6 +1287,10 @@ input {
     margin-top: 8px;
     border-radius: 10px;
     padding: 15px;
+}
+textarea:focus{
+    box-shadow: 0 0 10px rgba(51, 133, 255, 0.664);
+    transition: 0.3s;
 }
 
 .right input {
@@ -1613,9 +1627,17 @@ footer {
 
 .textblock_education {
     border: 1px solid #000;
-    width: 1000px;
+
     margin: 60px 30px 130px 30px;
 
+}
+@media(max-width:767px){
+    .education_large_text_container{
+        display: block;
+    }
+    .imgblock_education img{
+        display: none;
+    }
 }
 
 .textblock_education li {

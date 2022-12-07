@@ -81,7 +81,7 @@
                                 <a href="#app" class="header__link">Записаться на приём</a>
                             </li>
                             <li>
-                                <a href="" class="header__link">+7999999991</a>
+                                <a href="" class="header__link">+7 934 343 34 45</a>
                             </li>
                         </ul>
                     </nav>
@@ -157,10 +157,13 @@
                 <div class="appointment2_container">
                     <form action="php/mail.php" method="post">
                         <div class="left">
-                            <input type="text" name="user_name" placeholder="имя">
-                            <input type="text" name="user_email" placeholder="почта">
-                            <input type="text" name="user_phone" placeholder="телефон">
-                            <select name="user_service" id="selser" placeholder="услуга">
+                            <input type="text" name="user_name" placeholder="имя" id="user_name_input" required
+                                onkeypress="noDigits(event)">
+
+                            <input type="email" name="user_email" placeholder="почта" id="user_email_input" required>
+                            <input type="text" name="user_phone" placeholder="телефон" id="user_phone_input" required
+                                minlength="">
+                            <select name="user_service" id="selser" placeholder="услуга" required>
                                 <option value="" disabled selected>услуга</option>
                                 <option value="хирургия тазобедренного сустава">хирургия тазобедренного сустава</option>
                                 <option value="хирургия коленного сустава">хирургия коленного сустава</option>
@@ -196,6 +199,7 @@
     <script src="js/myScript.js"></script>
     <script src="js/burgerScript.js"></script>
     <script src="js/arrowScript.js"></script>
+    <script src="js/maskScript.js"></script>
 </body>
 
 </html>
