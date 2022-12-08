@@ -540,289 +540,189 @@ body.touch .arrow{
 
 /*##########################################################КОНЕЦ ЗАПИСИ НА ПРИЁМ1##########################################################    */
 
-/*##########################################################АРТОСКОПИЯ##########################################################    */
-.arthroscopy_frame {
-
-    max-width: 1250px;
-    height: auto;
-    margin: 0 auto 130px;
-    background: #EDEDED;
-    border-radius: 25px;
-}
-
-.arthroscopy {
-    padding: 30px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-.arthroscopy h1 {
-    margin: 0 0 30px 0;
-    width: 336.12px;
-    height: 138px;
-    background: #6FA9BB;
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
+/*##########################################################ПодробныеУслуги##########################################################    */
+.leadframe_services {
+    max-width: 100%;
+    
+    margin: 130px auto 130px;
+    
     display: flex;
-    align-items: flex-end;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    color: white;
+    justify-content: center;
+    align-items: center;
 }
+.leadframe_services_container {
+    display: flex;
+    border: 1px solid #000;
+    width: 1199px;
+    height: auto;
+    background:  #EDEDED;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.leadframe_services_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    min-height: 585px;
+    border: 1px solid #000;
+}
+.leadframe_services_block1 {
+    position: relative;
+    border: 1px solid #000;
 
-.arthroscopy p {
-    padding: 0 650px 0 10px;
-    font-style: normal;
-    font-weight: 700;
+}
+.leadframe_services_block1 h1{
+    position: absolute;
+    top:65%;
+    left:5%;
+    
+    width: 350px;
+    height: 130px;
+    text-align: left;
+    font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-}
-
-.arthroscopy a {
-
+    padding: 10px;
+    margin: 0 auto;
     display: flex;
-    margin: 100px auto 0px;
-    width: 300px;
-    height: 68.1px;
-    background: #6FA9BB;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 15px 0px;
-    font-size: 22px;
-    border-radius: 20px;
-    color: #F1F1F1;
-    transition-duration: 0.3s;
-
-
-}
-
-.arthroscopy a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-/*##########################################################КОНЕЦ АРТОСКОПИИ##########################################################    */
-
-/*##########################################################ХТС##########################################################    */
-.legsurg_frame {
-
-    max-width: 1250px;
-    height: auto;
-    margin: auto 130px;
-    background: #EDEDED;
-    border-radius: 25px;
-
-}
-
-.legsurg {
-
-    padding: 30px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-.legsurg h1 {
-
-    margin: 0 0 30px 0;
-    width: 336.12px;
-    height: 138px;
-    background: #6FA9BB;
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
-    display: flex;
-    align-items: flex-end;
-    padding-left: 20px;
-    padding-bottom: 10px;
     color: white;
+    align-items: flex-end;
+    background: rgba(111, 169, 187, 0.8);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
+.leadframe_services_block1 h1 span{
 
-.legsurg p {
-
-    padding: 0 650px 0 10px;
-    font-style: normal;
-    font-weight: 700;
+}
+.leadframe_services_block2 {
+    display: inline-block;
+    min-height: 422px;
+    border: 1px solid #000;
+    margin: 0px 0px 0px 10px;
+    
+}
+.leadframe_services_block2 h1{
+    max-width: 300px;
+    height: 90px;
+    text-align: left;
+    font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-}
-
-.legsurg a {
-
+    padding: 10px;
     display: flex;
-    margin: 100px auto 0px;
-    width: 300px;
-    height: 68.1px;
-    background: #6FA9BB;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 15px 0px;
-    font-size: 22px;
-    border-radius: 20px;
-    color: #F1F1F1;
-    transition-duration: 0.3s;
-
-}
-
-.legsurg a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-/*##########################################################КОНЕЦ ХТС##########################################################    */
-/*##########################################################КОЛЕНО##########################################################    */
-.kneesurg_frame {
-
-    max-width: 1250px;
-    height: auto;
-    margin: 0 auto 130px;
-    background: #EDEDED;
-    border-radius: 25px;
-}
-
-.kneesurg {
-    padding: 30px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-.kneesurg h1 {
-    margin: 0 0 30px 0;
-    width: 336.12px;
-    height: 138px;
-    background: #6FA9BB;
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
-    display: flex;
-    align-items: flex-end;
-    padding-left: 20px;
-    padding-bottom: 10px;
     color: white;
+    align-items: flex-end;
+    background: rgba(111, 169, 187, 1);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5px);
+    
 }
-
-.kneesurg p {
-    padding: 0 650px 0 10px;
-    font-style: normal;
-    font-weight: 700;
+.leadframe_services_block2 p{
+    margin: 10px 0px 10px 0px;
+    line-height: 25px;
+    font-size: 20px;
+}
+.leadframe_services_block2 li{
+    margin: 5px 0px 0px 15px;
+    line-height: 25px;
+    font-size: 20px;
+    background: url('../img/icons/marker.png') 5px 9px no-repeat;
+    background-size: 12px;
+    padding: 0 0 0 30px;
+}
+.service_frame {
+    max-width: 100%;
+    
+    margin: 130px auto 130px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service_container {
+    display: flex;
+    border: 1px solid #000;
+    width: 1199px;
+    background:  #EDEDED;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.service_body {
+    width: 95%;
+    min-height: 585px;
+    border: 1px solid #000;
+}
+.service_blocks{
+    display: flex;
+    
+}
+.service_block1 {
+    max-width: 500px;
+    border: 1px solid #000;
+    margin: 60px 0px 60px 100px;
+    line-height: 20px;
+    
+}
+.service_block1 p{
+    margin: 10px 0px 0px 0px;
+    
+}
+.service_block1 h1{
+    max-width: 300px;
+    height: 80px;
+    text-align: left;
+    font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-}
-
-.kneesurg a {
-
+    padding: 10px;
     display: flex;
-    margin: 100px auto 0px;
-    width: 300px;
-    height: 68.1px;
-    background: #6FA9BB;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 15px 0px;
-    font-size: 22px;
-    border-radius: 20px;
-    color: #F1F1F1;
-    transition-duration: 0.3s;
-
-
-}
-
-.kneesurg a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-/*##########################################################КОНЕЦ КОЛЕНА##########################################################    */
-/*##########################################################ОСТЕОТОМИЯ##########################################################    */
-
-.osteotomy_frame {
-
-    max-width: 1250px;
-    height: auto;
-    margin: 0 auto 130px;
-    background: #EDEDED;
-    border-radius: 25px;
-}
-
-.osteotomy {
-    padding: 30px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-.osteotomy h1 {
-    margin: 0 0 30px 0;
-    width: 336.12px;
-    height: 138px;
-    background: #6FA9BB;
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
-    display: flex;
-    align-items: flex-end;
-    padding-left: 20px;
-    padding-bottom: 10px;
     color: white;
-}
-
-.osteotomy p {
-    padding: 0 650px 0 10px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.osteotomy a {
-
-    display: flex;
-    margin: 100px auto 0px;
-    width: 300px;
-    height: 68.1px;
-    background: #6FA9BB;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 15px 0px;
-    font-size: 22px;
+    align-items: flex-end;
+    background: rgba(111, 169, 187, 1);
     border-radius: 20px;
-    color: #F1F1F1;
-    transition-duration: 0.3s;
-
+    -webkit-backdrop-filter: blur(5px);
+    margin: 0px 0px 0px 0px;
+}
+.service_block1 li{
+    margin: 10px 0px 0px 15px;
+    line-height: 25px;
+    background: url('../img/icons/marker.png') 5px 10px no-repeat;
+    background-size: 5px;
+    padding: 0px 0 5px 20px;
+}
+.service_block2 {
+    display: block;
+    width: 416px;
+    height: 405px;
+    background: #D9D9D9;
+}
+.service_button{
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0px 0px 30px 0px;
+    
+}
+.service_button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    width: 265px;
+    height: 60px;
+    color: #fff;
+    background: #6FA9BB;
+    border-radius: 20px;
 
 }
+/*##########################################################КонецПодробныхУслуг##########################################################    */
 
-.osteotomy a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
+
 
 /*##########################################################БЛОГ##########################################################    */
 
