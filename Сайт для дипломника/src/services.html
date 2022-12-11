@@ -16,10 +16,77 @@
 
 <body>
     <main>
-        <header>
-            <?
-            include('nav.php');
-                ?>
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="" class="header__logo">
+                        <img src="img/icons/logo.png" alt="">
+
+                    </a>
+                    <div class="header__logo__heading">
+                        <h1>Doc. Cherevatyy</h1>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+
+                            <li>
+                                <a href="" class="header__link">Обо мне</a>
+
+                            </li>
+                            <li>
+                                <a href="#ser" class="header__link">Услуги</a>
+                                <span class="menu__arrow arrow"></span>
+                                <ul class="sublist">
+                                    <li>
+                                        <a href="" class="sublink">коррекция и исправление деформаций нижних
+                                            конечностей</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="" class="sublink">удлинение или укорочение конечностей</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sublink">лечение ложных суставов и неправильно сросшихся
+                                            переломов</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sublink">лечение остеомелита голени</a>
+                                    </li>
+                                    <li><a href="" class="sublink">лечение артроза коленного сустава</a>
+                                    </li>
+                                    <li><a href="" class="sublink">сращение и удлинение костей при помощи аппарата
+                                            Илизарова</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#blo" class="header__link">Блог</a>
+                                <span class="menu__arrow arrow"></span>
+                                <ul class="sublist">
+                                    <li>
+                                        <a href="" class="sublink">доктор Н. И. Череватый</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sublink">научные работы</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sublink">образование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false" class="header__link" id="app">Записаться на приём</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">+7 934 343 34 45</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
         <div class="leadframe_services">
             <div class="leadframe_services_container">
@@ -49,7 +116,34 @@
             </div>
         </div>
 
+        <div class="appointment_frame2 disapp">
 
+            <div class="appointment2" id=app>
+                <div class="appointment2_container">
+                    <form action="php/mail.php" method="post">
+                        <div class="left">
+                            <input type="text" name="user_name" placeholder="имя" id="user_name_input" required
+                                onkeypress="noDigits(event)">
+
+                            <input type="email" name="user_email" placeholder="почта" id="user_email_input" required>
+                            <input type="text" name="user_phone" placeholder="телефон" id="user_phone_input" required
+                                minlength="">
+                            <select name="user_service" id="selser" placeholder="услуга" required>
+                                <option value="" disabled selected>услуга</option>
+                                <option value="хирургия тазобедренного сустава">хирургия тазобедренного сустава</option>
+                                <option value="хирургия коленного сустава">хирургия коленного сустава</option>
+                                <option value="корригирующая остеотомия">корригирующая остеотомия</option>
+                                <option value="артроскопия">артроскопия</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <textarea name="formtext" id="" cols="30" rows="10" placeholder="сообщение"></textarea>
+                            <input class="submit" type="submit" value="записаться на приём" id="but">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="service_frame" id=leg_fr>
             <div class="service_container">
                 <div class="service_body">
@@ -256,6 +350,7 @@
     <script src="js/burgerScript.js"></script>
     <script src="js/arrowScript.js"></script>
     <script src="js/maskScript.js"></script>
+    <script src="js/appointment.js"></script>
 </body>
 
 </html>
