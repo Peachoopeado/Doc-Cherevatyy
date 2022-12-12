@@ -546,7 +546,7 @@ body.lock{
 .leadframe_services {
     max-width: 100%;
     
-    margin: 130px auto 130px;
+    margin: 130px auto 230px;
     
     display: flex;
     justify-content: center;
@@ -623,7 +623,7 @@ body.lock{
     
 }
 .leadframe_services_block2 p{
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 0px 0px;
     line-height: 25px;
     font-size: 20px;
 }
@@ -647,7 +647,7 @@ body.lock{
 .service_container {
     display: flex;
     border: 1px solid #000;
-    width: 1199px;
+    width: 1299px;
     background:  #EDEDED;
     border-radius: 40px;
     justify-content: center;
@@ -660,6 +660,7 @@ body.lock{
 }
 .service_blocks{
     display: flex;
+    border: 1px solid #000;
     
 }
 .service_block1 {
@@ -675,7 +676,7 @@ body.lock{
 }
 .service_block1 h1{
     max-width: 300px;
-    height: 80px;
+    min-height: 80px;
     text-align: left;
     font-weight: bold;
     font-size: 20px;
@@ -697,11 +698,25 @@ body.lock{
     padding: 0px 0 5px 20px;
 }
 .service_block2 {
-    display: block;
-    width: 416px;
-    height: 405px;
-    background: #D9D9D9;
+    margin: 60px 0px 0px 100px;
+    float: right;
+    border: 1px solid #000;
+    height: 650px;
+
+    
+
 }
+.service_block2 img{
+    display: block;
+    background: #6FA9BB;
+    border: 15px solid #6FA9BB;
+    border-radius: 20px;
+    margin: 0px 0px 30px 0px;
+    width: 351px;
+    
+    
+}
+
 .service_button{
     border: 1px solid #000;
     display: flex;
