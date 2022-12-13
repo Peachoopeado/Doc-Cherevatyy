@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
                     </a>
                     <div class="header__logo__heading">
-                        <h1>Doc. Cherevatyy</h1>
+                        <h1><a href="index.html">Doc. Cherevatyy</a></h1>
                     </div>
                     <div class="header__burger">
                         <span></span>
@@ -34,6 +34,20 @@
 
                             <li>
                                 <a href="" class="header__link">Обо мне</a>
+                                <ul class="sublist">
+                                    <div class="sublist_body">
+                                        <li>
+                                            <a href="education.html" class="sublink">образование</a>
+                                        </li>
+                                        <li>
+                                            <a href="science.html" class="sublink">публикации</a>
+                                        </li>
+                                        <li>
+                                            <a href="mystory.html" class="sublink">моя история</a>
+                                        </li>
+                                    </div>
+
+                                </ul>
 
                             </li>
                             <li>
@@ -42,48 +56,54 @@
                                 <ul class="sublist">
                                     <div class="sublist_body">
                                         <li>
-                                            <a href="" class="sublink">коррекция разной длины ног
+                                            <a href="#first" class="sublink">коррекция разной длины ног
                                             </a>
 
                                         </li>
                                         <li>
-                                            <a href="" class="sublink">удлинение ног<br>увеличение роста
+                                            <a href="#second" class="sublink">исправление кривизны ног без аппарата
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="#third" class="sublink">удлинение ног<br>увеличение роста
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="" class="sublink">исправление варусной деформации нижних
+                                            <a href="#fourth" class="sublink">исправление варусной деформации нижних
                                                 конечностей,
                                                 голени
 
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="" class="sublink">исправление вальгусной деформации нижних
+                                            <a href="#fifth" class="sublink">исправление вальгусной деформации нижних
                                                 конечностей,
                                                 голени
                                             </a>
                                         </li>
-                                        <li><a href="" class="sublink">исправление ложной кривизны
+                                        <li><a href="#sixth" class="sublink">исправление ложной кривизны
                                             </a>
                                         </li>
-                                        <li><a href="" class="sublink">корригирующая остеотомия
+                                        <li><a href="#seventh" class="sublink">корригирующая остеотомия
                                             </a>
                                         </li>
-                                        <li><a href="" class="sublink">лечение неправильно сросшихся переломов и
+                                        <li><a href="#eighth" class="sublink">лечение неправильно сросшихся переломов и
                                                 врожденных
                                                 деформаций конечностей
                                             </a>
                                         </li>
-                                        <li><a href="" class="sublink">лечение остеомелита голени
+                                        <li><a href="#nineth" class="sublink">лечение остеомелита голени
                                             </a>
                                         </li>
-                                        <li><a href="" class="sublink">артроз коленного сустава операция
+                                        <li><a href="#tenth" class="sublink">артроз коленного сустава операция
                                             </a>
                                         </li>
-                                        <li><a href="" class="sublink">укорочение конечностей
+                                        <li><a href="#eleventh" class="sublink">укорочение конечностей
                                             </a>
                                         </li>
-                                        <li><a href="" class="sublink">аппарат Илизарова для сращивания и удлинения
+                                        <li><a href="#twelth" class="sublink">аппарат Илизарова для сращивания и
+                                                удлинения
                                                 костей
 
                                             </a>
@@ -93,22 +113,9 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#blo" class="header__link">Блог</a>
+                                <a href="blog.html" class="header__link">Блог</a>
                                 <span class="menu__arrow arrow"></span>
-                                <ul class="sublist">
-                                    <div class="sublist_body">
-                                        <li>
-                                            <a href="" class="sublink">доктор Н. И. Череватый</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sublink">научные работы</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sublink">образование</a>
-                                        </li>
-                                    </div>
 
-                                </ul>
                             </li>
                             <li>
                                 <a href="#" onclick="return false" class="header__link" id="app">Записаться на приём</a>
@@ -125,7 +132,7 @@
         <div class="science_large_text">
             <div class="science_large_text_container">
                 <div class="imgblock_science">
-                    <h1>научные работы</h1>
+                    <h1>публикации</h1>
 
 
                 </div>
@@ -193,6 +200,11 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/scrollScript.js"></script>
     <script src="js/myScript.js"></script>
+    <script src="js/burgerScript.js"></script>
+    <script src="js/arrowScript.js"></script>
+    <script src="js/maskScript.js"></script>
+    <script src="js/appointment.js"></script>
+    <script src="js/btn_topScript.js"></script>
 </body>
 
 </html>

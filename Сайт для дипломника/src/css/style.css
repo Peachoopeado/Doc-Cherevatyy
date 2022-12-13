@@ -1,9 +1,5 @@
-@font-face {
-    font-family: 'MontserratSemiBold';
-    src: url('..fonts/MontserratSemiBold.woff') format ('woff'), url ('..fonts/MontserratSemiBold.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
+
+
 
 html,
 body {
@@ -11,13 +7,45 @@ body {
     height: 100%;
 
     background: #DDDDDD;
-
+    font-weight: 700;
 
 }
 
 main {
     font-family: 'Montserrat', sans-serif;
     position: relative;
+}
+.btn-up{
+    position: fixed;
+    background-color: #6FA9BB;;
+    right: 20px;
+    bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+    transition: 0.3s;
+
+}
+.btn-up::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transpanent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+.btn-up_hide{
+    display: none;
+}
+@media (hover:hover) and (pointer: fine){
+    .btn-up:hover{
+        background-color: #26CFC5;
+    }
 }
 
 /*##########################################################ШАПКА##########################################################    */
@@ -37,7 +65,6 @@ main {
     width: 100%;
     top: 0;
     left: 0;
-
     z-index: 50;
 
 }
@@ -71,6 +98,7 @@ main {
     overflow: hidden;
     position: relative;
     z-index: 3;
+    
 }
 
 .header__logo img {
@@ -82,7 +110,10 @@ main {
     z-index: 5;
     left: 30px;
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 700;
+}
+.header__logo__heading h1{
+    font-weight: 700;
 }
 
 .header__burger {
@@ -125,7 +156,7 @@ main {
     transition: 0.3s;
 }
 .sublist a:hover{
-    background-color: rgba(13, 142, 228, 0.388);
+    background-color: #6FA9BB;
 }
 .sublink{
     color: #000;
@@ -379,7 +410,6 @@ body.lock{
 
 
 .lead_input {
-
     width: 270px;
     height: 50px;
     background: #6FA9BB;
@@ -394,7 +424,6 @@ body.lock{
 .lead_input:hover {
     background: #26CFC5;
     color: #fff;
-    box-shadow: inset 0 0 0 3px #3a7999;
 }
 
 /*##########################################################КОНЕЦ ЛИДА##########################################################    */
@@ -458,7 +487,7 @@ body.lock{
 .services a:hover {
     background: #26CFC5;
     color: black;
-    box-shadow: inset 0 0 0 3px #3a7999;
+    
 }
 
 
@@ -688,14 +717,18 @@ body.lock{
     width: 351px;
 }
 .service_block1 img{
+    display: flex;
+    flex-wrap: wrap;
     float: right;
 }
 .service_block1 p{
     margin: 10px 0px 0px 0px;
+    font-weight: 500;
+    font-size: 16px;
     
 }
 .service_block1 h1{
-    max-width: 300px;
+    width: 300px;
     min-height: 80px;
     text-align: left;
     font-weight: bold;
@@ -716,6 +749,8 @@ body.lock{
     background: url('../img/icons/marker.png') 5px 10px no-repeat;
     background-size: 5px;
     padding: 0px 0 5px 20px;
+    font-weight: 500;
+    font-size: 16px;
 }
 .service_block2 {
     margin: 60px 0px 0px 100px;
@@ -835,7 +870,6 @@ body.lock{
 .blog a:hover {
     background: #26CFC5;
     color: black;
-    box-shadow: inset 0 0 0 3px #3a7999;
 }
 
 
@@ -844,296 +878,53 @@ body.lock{
 
 
 /*##########################################################КОНЕЦ БЛОГА##########################################################    */
-/*##########################################################РЕКОМЕНДАЦИИ##########################################################    */
-
-.recomend_frame {
-
-    max-width: 1250px;
-    height: auto;
-    margin: 0 auto 130px;
-    background: #EDEDED;
-    border-radius: 25px;
-}
-
-.recomend {
-    padding: 30px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-.recomend h1 {
-    margin: 0 0 30px 0;
-    width: 336.12px;
-    height: 138px;
-    background: #6FA9BB;
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
+.post_car {
+    max-width: 100%;
     display: flex;
-    align-items: flex-end;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 130px auto 130px ;
 }
+.post_car_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1199px;
+    height: 400px;
+    border: 1px solid #000;
+    background: #EDEDED;
 
-.recomend p {
-    padding: 0 650px 0 10px;
-    font-style: normal;
-    font-weight: 700;
+}
+.post_car_body {
+    width: 95%;
+    min-height: 385px;
+    border: 1px solid #000;
+}
+.post_car_body h1{
+    position:absolute;
+    width: 300px;
+    min-height: 80px;
+    text-align: left;
+    font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-}
-
-.recomend a {
-
+    padding: 10px;
     display: flex;
-    margin: 100px auto 0px;
-    width: 300px;
-    height: 68.1px;
-    background: #6FA9BB;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 15px 0px;
-    font-size: 22px;
-    border-radius: 20px;
-    color: #F1F1F1;
-    transition-duration: 0.3s;
-
-
-}
-
-.recomend a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-/*##########################################################КОНЕЦ РЕКОМЕНДАЦИЙ##########################################################    */
-
-/*##########################################################СТАТЬИ##########################################################    */
-
-
-
-.articles_frame {
-
-    max-width: 1250px;
-    height: auto;
-    margin: 0 auto 130px;
-    background: #EDEDED;
-    border-radius: 25px;
-}
-
-.articles {
-    padding: 30px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-.articles h1 {
-    margin: 0 0 30px 0;
-    width: 336.12px;
-    height: 138px;
-    background: #6FA9BB;
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
-    display: flex;
-    align-items: flex-end;
-    padding-left: 20px;
-    padding-bottom: 10px;
     color: white;
-}
-
-.articles p {
-    padding: 0 650px 0 10px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.articles a {
-    display: flex;
-    margin: 100px auto 0px;
-    width: 300px;
-    height: 68.1px;
-    background: #6FA9BB;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 15px 0px;
-    font-size: 22px;
-    border-radius: 20px;
-    color: #F1F1F1;
-    transition-duration: 0.3s;
-
-
-}
-
-.articles a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-/*##########################################################КОНЕЦ СТАТЕЙ##########################################################    */
-
-/*##########################################################КВАЛИФИКАЦИИ##########################################################    */
-
-.qualifications_frame {
-
-    max-width: 1250px;
-    height: auto;
-    margin: 0 auto 130px;
-    background: #EDEDED;
-    border-radius: 25px;
-}
-
-.qualifications {
-    padding: 30px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-.qualifications h1 {
-    margin: 0 0 30px 0;
-    width: 336.12px;
-    height: 138px;
-    background: #6FA9BB;
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
-    display: flex;
     align-items: flex-end;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.qualifications p {
-    padding: 0 650px 0 10px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.qualifications a {
-
-    display: flex;
-    margin: 100px auto 0px;
-    width: 300px;
-    height: 68.1px;
-    background: #6FA9BB;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 15px 0px;
-    font-size: 22px;
+    background: rgba(111, 169, 187, 1);
     border-radius: 20px;
-    color: #F1F1F1;
-    transition-duration: 0.3s;
-
-
+    -webkit-backdrop-filter: blur(5px);
+    margin: 0px 0px 0px 0px;
 }
-
-.qualifications a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-/*##########################################################КОНЕЦ КВАЛИФИКАЦИИ##########################################################    */
-
-/*##########################################################ПАТЕНТЫ##########################################################    */
-
-
-.patents_frame {
-
-    max-width: 1250px;
-    height: auto;
-    margin: 0 auto 130px;
-    background: #EDEDED;
-    border-radius: 25px;
-}
-
-.patents {
-    padding: 30px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-.patents h1 {
-    margin: 0 0 30px 0;
-    width: 336.12px;
-    height: 138px;
-    background: #6FA9BB;
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
+.post_content {
     display: flex;
-    align-items: flex-end;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    color: white;
+    justify-self: end;
+    align-items: right;
+    width: 50%;
+    min-height: 365px;
+    border: 1px solid #000;
 }
-
-.patents p {
-    padding: 0 650px 0 10px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.patents a {
-
-    display: flex;
-    margin: 100px auto 0px;
-    width: 300px;
-    height: 68.1px;
-    background: #6FA9BB;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 15px 0px;
-    font-size: 22px;
-    border-radius: 20px;
-    color: #F1F1F1;
-    transition-duration: 0.3s;
-
-
-}
-
-.patents a:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-/*##########################################################КОНЕЦ ПАТЕНТОВ##########################################################    */
-
 /*##########################################################ОСТАВЬТЕ ЗАЯВКУ##########################################################    */
 .appointment_frame2 {
     
@@ -1346,12 +1137,14 @@ footer {
     font-size: 35px;
     padding: 0px 0px 0px 40px;
     margin: 10px 0 0;
+    font-weight: 700;
 }
 .leadabout__txt h2{
     max-width: 600px;
     font-size: 20px;
     padding: 0px 0px 0px 40px;
     margin: 10px 0 0;
+    font-weight: 700;
 }
 .leadabout__txt img{
     margin: 0px 0px 0px 30px;
@@ -1450,9 +1243,9 @@ footer {
 
 .textblock p {
     margin: 0 0 20px 0;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: 500;
     text-align: left;
 }
 
@@ -1520,7 +1313,7 @@ footer {
     margin: 0 0 20px 0;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: 500;
     text-align: left;
     background: url('../img/icons/marker.png') 5px 9px no-repeat;
     background-size: 12px;
@@ -1550,19 +1343,19 @@ footer {
     display: inline-block;
     margin: 60px 10px 0px 30px
 }
-
-.imgblock_education img {
+.dip{
     display: block;
-    margin: 0 0 30px 0;
+    margin: 0px 0px 30px 0px;
+}
+.dip:nth-of-type(1){
+    margin: 0px 0px 30px 40px;
+
+}
+.dip:nth-of-type(2){
+    margin: 0px 0px 30px 40px;
+
 }
 
-.imgblock_education img:nth-of-type(1) {
-    margin: 0 0 30px 40px;
-}
-
-.imgblock_education img:nth-of-type(2) {
-    margin: 0 0 30px 40px;
-}
 
 
 .imgblock_education h1 {
@@ -1584,10 +1377,11 @@ footer {
 
 .textblock_education {
     border: 1px solid #000;
-
+    
     margin: 60px 30px 130px 30px;
 
 }
+
 @media(max-width:767px){
     .education_large_text_container{
         display: block;
@@ -1601,9 +1395,59 @@ footer {
     margin: 0 0 20px 0;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: 500;
     text-align: left;
     background: url('../img/icons/marker.png') 5px 9px no-repeat;
     background-size: 12px;
     padding: 0 0 0 30px;
 }
+
+/*#########################################################################КАРУСЕЛЬ####################################################*/
+.slider{
+    margin: 130px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.slider__contnainer{
+    width: 1199px;
+    height: 600px;
+    border: 1px solid #000;
+}
+.itc-slider__item{
+    counter-reset: slide;
+}
+.itc-slider__item{
+    border: 1px solid #000;
+    flex: 0 0 100%;
+    max-width: 100%;
+    counter-increment: slide;
+    height: 450px;
+    position: relative;
+}
+.itc-slider__item::before{
+    content:counter(slide)"/5";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+}
+.itc-slider__item:nth-child(1) {
+    background-color: #f44336;
+  }
+
+  .itc-slider__item:nth-child(2) {
+    background-color: #9c27b0;
+  }
+
+  .itc-slider__item:nth-child(3) {
+    background-color: #3f51b5;
+  }
+  
+    
