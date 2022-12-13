@@ -224,6 +224,28 @@
                 </div>
             </div>
         </div>
+        <div class="slider" id="slide">
+            <div class="itc-slider" data-slider="itc-slider" data-autoplay="true">
+                <h1>блог</h1>
+                <div class="itc-slider__wrapper">
+                    <div class="itc-slider__items">
+                        <div class="itc-slider__item">
+                            <div class="item__body"></div>
+                        </div>
+                        <div class="itc-slider__item">
+                            <div class="item__body"></div>
+                        </div>
+                        <div class="itc-slider__item">
+                            <div class="item__body"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                <button class="itc-slider__btn itc-slider__btn_next"></button>
+            </div>
+        </div>
+        </div>
         <div class="appointment_frame2">
             <h1>запись на приём</h1>
             <div class="appointment2" id=app2>
@@ -238,7 +260,8 @@
                                 minlength="">
                             <select name="user_service" id="selser" placeholder="услуга" required>
                                 <option value="" disabled selected>услуга</option>
-                                <option value="хирургия тазобедренного сустава">хирургия тазобедренного сустава</option>
+                                <option value="хирургия тазобедренного сустава">хирургия тазобедренного сустава
+                                </option>
                                 <option value="хирургия коленного сустава">хирургия коленного сустава</option>
                                 <option value="корригирующая остеотомия">корригирующая остеотомия</option>
                                 <option value="артроскопия">артроскопия</option>
@@ -252,38 +275,19 @@
                 </div>
             </div>
         </div>
-        <div class="slider" id="slide">
-            <div class="slider__contnainer">
-                <div class="itc-slider" data-slider="itc-slider" data-autoplay="true">
-                    <div class="itc-slider__wrapper">
-                        <div class="itc-slider__items">
-                            <div class="itc-slider__item">
-                                <div class="item__body"></div>
-                            </div>
-                            <div class="itc-slider__item">
-                                <div class="item__body"></div>
-                            </div>
-                            <div class="itc-slider__item">
-                                <div class="item__body"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-                    <button class="itc-slider__btn itc-slider__btn_prev"></button>
-                    <button class="itc-slider__btn itc-slider__btn_next"></button>
-                </div>
 
 
-                <footer>
-                    <div class="footmenu">
-                        <ul>
-                            <li><a href="#">doc.Cherevatyy</a></li>
-                            <li><a href="#">контакты</a></li>
-                            <li><a href="#">помощь/FAQ</a></li>
-                        </ul>
-                    </div>
-                </footer>
-                <?php
+
+        <footer>
+            <div class="footmenu">
+                <ul>
+                    <li><a href="#">doc.Cherevatyy</a></li>
+                    <li><a href="#">контакты</a></li>
+                    <li><a href="#">помощь/FAQ</a></li>
+                </ul>
+            </div>
+        </footer>
+        <?php
             include('foot.php');
         ?>
     </main>
