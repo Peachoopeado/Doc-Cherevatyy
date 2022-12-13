@@ -1418,7 +1418,41 @@ footer {
     border: 1px solid #000;
 }
 .itc-slider__item:nth-child(1):before{
-    content:"контент";
+    content:"пост1";
+    max-width: 300px;
+    min-height: 80px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px;
+    display: flex;
+    color: white;
+    align-items: flex-end;
+    background: rgba(111, 169, 187, 1);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5px);
+    margin: 30px 0px 0px 30px;
+}
+.itc-slider__item:nth-child(2):before{
+    content:"пост2";
+    max-width: 300px;
+    min-height: 80px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px;
+    display: flex;
+    color: white;
+    align-items: flex-end;
+    background: rgba(111, 169, 187, 1);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5px);
+    margin: 30px 0px 0px 30px;
+}
+.itc-slider__item:nth-child(3):before{
+    content:"пост3";
     max-width: 300px;
     min-height: 80px;
     text-align: left;
