@@ -33,6 +33,7 @@
 
                             <li>
                                 <a href="" class="header__link">Обо мне</a>
+                                <span class="menu__arrow arrow"></span>
                                 <ul class="sublist">
                                     <div class="sublist_body">
                                         <li>
@@ -114,7 +115,17 @@
                             <li>
                                 <a href="blog.html" class="header__link">Блог</a>
                                 <span class="menu__arrow arrow"></span>
+                                <ul class="sublist">
+                                    <div class="sublist_body">
+                                        <li>
+                                            <a href="" class="sublink">новости</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sublink">статьи</a>
+                                        </li>
+                                    </div>
 
+                                </ul>
                             </li>
                             <li>
                                 <a href="#" onclick="return false" class="header__link" id="app">Записаться на приём</a>
@@ -156,11 +167,13 @@
         </div>
 
         <div class="appointment_frame2 disapp">
+            <h1>заполните форму</h1>
+            <div class="appointment2 disapp" id=app>
 
-            <div class="appointment2" id=app>
-                <div class="appointment2_container">
+
+                <div class="appointment2_container disapp">
                     <form action="php/mail.php" method="post">
-                        <div class="left">
+                        <div class="left disapp">
                             <input type="text" name="user_name" placeholder="имя" id="user_name_input" required
                                 onkeypress="noDigits(event)">
 
@@ -175,7 +188,7 @@
                                 <option value="артроскопия">артроскопия</option>
                             </select>
                         </div>
-                        <div class="right">
+                        <div class="right disapp">
                             <textarea name="formtext" id="" cols="30" rows="10" placeholder="сообщение"></textarea>
                             <input class="submit" type="submit" value="записаться на приём" id="but">
                         </div>
@@ -203,7 +216,7 @@
                         </div>
                     </div>
 
-                    <div class="service_button"><a href="#app">записаться на приём</a></div>
+                    <div class="service_button"><a href="#">записаться на приём</a></div>
 
                 </div>
 

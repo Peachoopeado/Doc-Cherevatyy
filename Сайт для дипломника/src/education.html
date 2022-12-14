@@ -32,7 +32,8 @@
                         <ul class="header__list">
 
                             <li>
-                                <a href="" class="header__link">Обо мне</a>
+                                <a href="#blo" class="header__link">Обо мне</a>
+                                <span class="menu__arrow arrow"></span>
                                 <ul class="sublist">
                                     <div class="sublist_body">
                                         <li>
@@ -50,58 +51,65 @@
 
                             </li>
                             <li>
-                                <a href="#ser" class="header__link">Услуги</a>
+                                <a href="services.html" class="header__link">Услуги</a>
                                 <span class="menu__arrow arrow"></span>
                                 <ul class="sublist">
                                     <div class="sublist_body">
                                         <li>
-                                            <a href="#first" class="sublink">коррекция разной длины ног
+                                            <a href="services.html#first" class="sublink">коррекция разной длины ног
                                             </a>
 
                                         </li>
                                         <li>
-                                            <a href="#second" class="sublink">исправление кривизны ног без аппарата
+                                            <a href="services.html#second" class="sublink">исправление кривизны ног без
+                                                аппарата
                                             </a>
 
                                         </li>
                                         <li>
-                                            <a href="#third" class="sublink">удлинение ног<br>увеличение роста
+                                            <a href="services.html#third" class="sublink">удлинение ног<br>увеличение
+                                                роста
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#fourth" class="sublink">исправление варусной деформации нижних
+                                            <a href="services.html#fourth" class="sublink">исправление варусной
+                                                деформации нижних
                                                 конечностей,
                                                 голени
 
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#fifth" class="sublink">исправление вальгусной деформации нижних
+                                            <a href="services.html#fifth" class="sublink">исправление вальгусной
+                                                деформации нижних
                                                 конечностей,
                                                 голени
                                             </a>
                                         </li>
-                                        <li><a href="#sixth" class="sublink">исправление ложной кривизны
+                                        <li><a href="services.html#sixth" class="sublink">исправление ложной кривизны
                                             </a>
                                         </li>
-                                        <li><a href="#seventh" class="sublink">корригирующая остеотомия
+                                        <li><a href="services.html#seventh" class="sublink">корригирующая остеотомия
                                             </a>
                                         </li>
-                                        <li><a href="#eighth" class="sublink">лечение неправильно сросшихся переломов и
+                                        <li><a href="services.html#eighth" class="sublink">лечение неправильно сросшихся
+                                                переломов и
                                                 врожденных
                                                 деформаций конечностей
                                             </a>
                                         </li>
-                                        <li><a href="#nineth" class="sublink">лечение остеомелита голени
+                                        <li><a href="services.html#nineth" class="sublink">лечение остеомелита голени
                                             </a>
                                         </li>
-                                        <li><a href="#tenth" class="sublink">артроз коленного сустава операция
+                                        <li><a href="services.html#tenth" class="sublink">артроз коленного сустава
+                                                операция
                                             </a>
                                         </li>
-                                        <li><a href="#eleventh" class="sublink">укорочение конечностей
+                                        <li><a href="services.html#eleventh" class="sublink">укорочение конечностей
                                             </a>
                                         </li>
-                                        <li><a href="#twelth" class="sublink">аппарат Илизарова для сращивания и
+                                        <li><a href="services.html#twelth" class="sublink">аппарат Илизарова для
+                                                сращивания и
                                                 удлинения
                                                 костей
 
@@ -112,12 +120,22 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="blog.html" class="header__link">Блог</a>
+                                <a href="#slide" class="header__link">Блог</a>
                                 <span class="menu__arrow arrow"></span>
+                                <ul class="sublist">
+                                    <div class="sublist_body">
+                                        <li>
+                                            <a href="" class="sublink">новости</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sublink">статьи</a>
+                                        </li>
+                                    </div>
 
+                                </ul>
                             </li>
                             <li>
-                                <a href="#" onclick="return false" class="header__link" id="app">Записаться на приём</a>
+                                <a href="#app2" class="header__link" id="app">записаться на приём</a>
                             </li>
                             <li>
                                 <a href="" class="header__link">+7 934 343 34 45</a>
@@ -127,6 +145,36 @@
                 </div>
             </div>
         </header>
+
+        <div class="appointment_frame2 disapp">
+            <h1>заполните форму</h1>
+            <div class="appointment2 disapp" id=app>
+
+
+                <div class="appointment2_container disapp">
+                    <form action="php/mail.php" method="post">
+                        <div class="left disapp">
+                            <input type="text" name="user_name" placeholder="имя" id="user_name_input" required
+                                onkeypress="noDigits(event)">
+
+                            <input type="email" name="user_email" placeholder="почта" id="user_email_input" required>
+                            <input type="text" name="user_phone" placeholder="телефон" id="user_phone_input" required
+                                minlength="">
+                            <select name="user_service" id="selser" placeholder="услуга" required>
+                                <option value="" disabled selected>услуга</option>
+                                <option value="хирургия тазобедренного сустава">хирургия тазобедренного сустава</option>
+                                <option value="хирургия коленного сустава">хирургия коленного сустава</option>
+                                <option value="корригирующая остеотомия">корригирующая остеотомия</option>
+                                <option value="артроскопия">артроскопия</option>
+                            </select>
+                        </div>
+                        <div class="right disapp">
+                            <textarea name="formtext" id="" cols="30" rows="10" placeholder="сообщение"></textarea>
+                            <input class="submit" type="submit" value="записаться на приём" id="but">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="education_large_text">
             <div class="education_large_text_container">
@@ -185,11 +233,11 @@
             <div class="blog_container">
                 <div class="recframe">
                     <img src="img/portrait.png" alt="">
-                    <a href="about.html">доктор Н.И. Череватый</a>
+                    <a href="about.html">моя история</a>
                 </div>
                 <div class="artframe">
                     <img src="img/science.png" alt="">
-                    <a href="science.html">научные работы</a>
+                    <a href="science.html">публикации</a>
                 </div>
                 <div class="qualframe">
                     <img src="img/education.png" alt="">

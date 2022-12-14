@@ -120,9 +120,7 @@ main {
     display: none;
 }
 
-.header__menu {
-    
-}
+
 .header__menu a.parent{
     margin: 0px 10px 0px 0px;
 }
@@ -232,6 +230,7 @@ body.touch .arrow{
     text-decoration: none;
     transition-duration: 0.3s;
 }
+
 .header__link:hover{
     color: #26CFC5;
     font-size: 22px;
@@ -362,7 +361,7 @@ body.lock{
 
 .lead {
     display: flex;
-    height: auto;
+    height: 541px;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -371,17 +370,21 @@ body.lock{
 }
 .lead_txt{
     width: 700px;
-    min-height: 400px;
-    margin: 30px 0 10px 0;
+    min-height: 541px;
+    
+    background:rgba(237, 237, 237, 0.5);
+    border-radius: 20px;
     
 }
 .lead_txt h1{
     font-size: 26px;
-    margin: 30px;
+    margin: 140px 0px 0px 0px;
+    font-weight: 700;
 }
 .lead_txt h2{
     font-size: 20px;
-    margin: 30px;
+    margin: 20px 0px 30px 0px;
+    font-weight: 700;
 }
 
 
@@ -402,7 +405,7 @@ body.lock{
 
     .lead_txt {
         display: block;
-        margin-bottom: 50px;
+        
     }
 }
 
@@ -456,7 +459,7 @@ body.lock{
     display: inline-block;
     width: 300px;
     height: 450px;
-    margin: 0 0 20px 20px;
+    margin: 0 20px 20px 20px;
     border-radius: 20px;
     background: #EDEDED;
 }
@@ -791,6 +794,7 @@ body.lock{
     background: #6FA9BB;
     border-radius: 20px;
     transition: 0.3s;
+    font-size: 20px;
 }
 .service_button a:hover{
     background:  #26CFC5;;
@@ -926,18 +930,13 @@ body.lock{
     border: 1px solid #000;
 }
 /*##########################################################ОСТАВЬТЕ ЗАЯВКУ##########################################################    */
-.appointment_frame2 {
-    
-    
-}
+
 .appointment_frame2.disapp{
     
     width: 100%;
     height: 100%;
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top:100%;
     transition: 0.3s;
 }
 .appointment_frame2.disapp.appear{
@@ -947,7 +946,25 @@ body.lock{
     transition: 0.5s;
     
 }
-
+.appointment2.disapp{
+    display: none;
+    
+}
+.appointment2.disapp.appear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top:30%;
+    
+}
+.appointment_frame2.disapp.appear h1{
+    position: relative;
+    top: 30%;
+    text-align: center;
+    color: #EDEDED;
+}
 
 
 .appointment_frame2 h1 {
