@@ -38,6 +38,17 @@ $(document).ready(function () {
 
 });
 
+$(document).ready(function () {
+    $(".leadframe_services_block2").on("click", "a", function (event) {
+        event.preventDefault();
+
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 130;
+        $('body,html').animate({ scrollTop: top }, 1500);
+
+    });
+
+});
 
 
 
